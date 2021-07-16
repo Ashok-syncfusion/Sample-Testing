@@ -2135,11 +2135,9 @@ define(["require", "exports", "@syncfusion/ej2-inputs", "@syncfusion/ej2-buttons
             this.currentText = this.text;
             this.currentValue = this.value;
             var timeDisplayEle = document.getElementById("timecount");
-            var timeDisplayEle1 = document.getElementById("timecount1");
             if (timeDisplayEle) {
                 var date = new Date() - date1;
                 timeDisplayEle.innerHTML = '<b>Time:'+ date +'</b>';
-                timeDisplayEle1.innerHTML = '<b>Time:'+ date +'</b>'
             }
         };
         DropDownTree.prototype.setChipValues = function (text, value) {
