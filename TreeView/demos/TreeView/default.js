@@ -90,6 +90,7 @@ define(["require", "exports", "../../src/treeview/treeview"], function (require,
         }
     ];
     var tree1 = new treeview_1.TreeView({
+        showCheckBox: true,
         fields: { dataSource: hierarchicalData, id: 'id', text: 'name', child: 'subChild' }
     });
     tree1.appendTo('#tree1');
