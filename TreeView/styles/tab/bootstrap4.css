@@ -1,0 +1,98 @@
+/*! Horizontal Tab */
+/*! Bootstrap specific themes definition's */
+/*! Vertical Tab */
+/*! tab icons */
+.e-tab .e-tab-header .e-toolbar-items.e-hscroll.e-rtl .e-nav-left-arrow::before {
+  content: '\e70b';
+}
+
+.e-tab .e-tab-header .e-toolbar-items.e-hscroll.e-rtl .e-nav-right-arrow::before {
+  content: '\e71f';
+}
+
+.e-tab .e-tab-header .e-scroll-nav .e-nav-left-arrow::before {
+  content: '\e71f';
+}
+
+.e-tab .e-tab-header .e-scroll-nav .e-nav-right-arrow::before {
+  content: '\e70b';
+}
+
+.e-tab .e-tab-header .e-close-icon::before {
+  content: '\e745';
+  position: relative;
+}
+
+.e-tab .e-tab-header .e-popup-up-icon::before {
+  content: '\e721';
+}
+
+@media screen and (max-width: 480px) {
+  .e-tab .e-tab-header .e-popup-up-icon::before {
+    content: '\e781';
+  }
+}
+
+.e-tab .e-tab-header .e-popup-down-icon::before {
+  content: '\e744';
+}
+
+@media screen and (max-width: 480px) {
+  .e-tab .e-tab-header .e-popup-down-icon::before {
+    content: '\e781';
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .e-tab.e-vertical-icon .e-tab-header .e-popup-up-icon::before {
+    content: '\e721';
+  }
+  .e-tab.e-vertical-icon .e-tab-header .e-popup-down-icon::before {
+    content: '\e744';
+  }
+}
+
+.e-tab.e-vertical-tab .e-tab-header .e-scroll-nav .e-nav-up-arrow::before {
+  content: '\e734';
+}
+
+.e-tab.e-vertical-tab .e-tab-header .e-scroll-nav .e-nav-down-arrow::before {
+  content: '\e705';
+}
+
+.e-tab.e-vertical-tab .e-tab-header .e-popup-up-icon::before {
+  content: 'More';
+}
+
+.e-tab.e-vertical-tab .e-tab-header .e-popup-up-icon::after {
+  content: '\e721';
+}
+
+.e-tab.e-vertical-tab .e-tab-header .e-popup-down-icon::before {
+  content: 'More';
+}
+
+.e-tab.e-vertical-tab .e-tab-header .e-popup-down-icon::after {
+  content: '\e744';
+}
+
+.e-tab.e-vertical-tab.e-icon-tab .e-tab-header .e-popup-up-icon::before {
+  content: '';
+}
+
+.e-tab.e-vertical-tab.e-icon-tab .e-tab-header .e-popup-up-icon::after {
+  content: '\e721';
+}
+
+.e-tab.e-vertical-tab.e-icon-tab .e-tab-header .e-popup-down-icon::before {
+  content: '';
+}
+
+.e-tab.e-vertical-tab.e-icon-tab .e-tab-header .e-popup-down-icon::after {
+  content: '\e744';
+}
+
+.e-tab-clone-element .e-close-icon::before {
+  content: '\e745';
+  position: relative;
+}

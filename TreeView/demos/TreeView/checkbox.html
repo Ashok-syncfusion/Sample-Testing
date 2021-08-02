@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>TypeScript HTML App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
+    <link href="./styles/material.css" rel="stylesheet" />
+    <!-- <script>
+        window.require = {
+            config: function(json) {
+                window.rsConfig = json;
+                window.rsConfig.baseUrl = '';
+            }
+        };
+    </script> -->
+    <script data-main="./checkbox" src="../../node_modules/requirejs/require.js"></script>
+    <!-- <script>
+        require.config(window.rsConfig);
+    </script> -->
+    <script>
+        require.config({
+    // Karma serves files under /base, which is the basePath from your config file
+    packages: [{
+            name: '@syncfusion/ej2-base',
+            location: 'node_modules/@syncfusion/ej2-base/dist',
+            main: 'ej2-base.umd.min.js'
+        },
+        {
+            name: '@syncfusion/ej2-data',
+            location: 'node_modules/@syncfusion/ej2-data/dist',
+            main: 'ej2-data.umd.min.js'
+        },
+        {
+            name: '@syncfusion/ej2-buttons',
+            location: 'node_modules/@syncfusion/ej2-buttons/dist',
+            main: 'ej2-buttons.umd.min.js'
+        },
+        {
+            name: '@syncfusion/ej2-popups',
+            location: 'node_modules/@syncfusion/ej2-popups/dist',
+            main: 'ej2-popups.umd.min.js'
+        },
+        {
+            name: '@syncfusion/ej2-lists',
+            location: 'node_modules/@syncfusion/ej2-lists/dist',
+            main: 'ej2-lists.umd.min.js'
+        },
+        {
+            name: '@syncfusion/ej2-inputs',
+            location: 'node_modules/@syncfusion/ej2-inputs/dist',
+            main: 'ej2-inputs.umd.min.js'
+        }
+    ]
+});
+    </script>
+</head>
+
+<body>
+    <div id="tree1"></div>
+    <style>
+        .e-treeview.e-control {
+            max-width: 500px;
+            margin: auto;
+            border: 1px solid #dddddd;
+            border-radius: 3px;
+        }
+    </style>
+</body>
+
+</html>

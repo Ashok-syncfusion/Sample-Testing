@@ -1,0 +1,9 @@
+/*! component's theme wise override fabric-definitions and variables */
+/*! accordion icons */
+.e-accordion .e-tgl-collapse-icon::before {
+  content: '\e916';
+}
+
+.e-accordion .e-tgl-collapse-icon.e-expand-icon {
+  transform: rotate(-180deg);
+}

@@ -1,0 +1,10 @@
+/*! toolbar icons */
+.e-toolbar .e-popup-down-icon::before {
+  content: '\e83d';
+  line-height: normal;
+}
+
+.e-toolbar .e-popup-up-icon::before {
+  content: '\e834';
+  line-height: normal;
+}

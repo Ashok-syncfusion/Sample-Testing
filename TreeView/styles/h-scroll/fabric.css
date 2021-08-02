@@ -1,0 +1,34 @@
+/*! hscroll icons */
+.e-hscroll.e-rtl.e-scroll-device .e-nav-right-arrow::before {
+  content: '\e904';
+}
+
+.e-hscroll.e-rtl.e-scroll-device .e-nav-left-arrow::before {
+  content: '\e913';
+}
+
+.e-hscroll.e-rtl .e-nav-left-arrow::before {
+  content: '\e830';
+}
+
+.e-hscroll.e-rtl .e-nav-right-arrow::before {
+  content: '\e829';
+}
+
+.e-hscroll.e-scroll-device .e-nav-right-arrow::before {
+  content: '\e913';
+}
+
+.e-hscroll.e-scroll-device .e-nav-left-arrow::before {
+  content: '\e904';
+}
+
+.e-hscroll .e-nav-left-arrow::before {
+  content: '\e829';
+  line-height: normal;
+}
+
+.e-hscroll .e-nav-right-arrow::before {
+  content: '\e830';
+  line-height: normal;
+}

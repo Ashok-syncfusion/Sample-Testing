@@ -1,0 +1,15 @@
+/*! contextmenu layout */
+.e-contextmenu-wrapper ul .e-menu-item .e-previous::before,
+.e-contextmenu-container ul .e-menu-item .e-previous::before {
+  content: '\e94b';
+}
+
+.e-contextmenu-wrapper ul .e-menu-item .e-caret::before,
+.e-contextmenu-container ul .e-menu-item .e-caret::before {
+  content: '\e207';
+}
+
+.e-rtl.e-contextmenu-wrapper .e-menu-item .e-caret::before,
+.e-rtl.e-contextmenu-container .e-menu-item .e-caret::before {
+  content: '\e990';
+}
