@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Essential JS 2 for Dropdown Tree</title>
+    <link href="https://cdn.syncfusion.com/ej2/material.css" rel="stylesheet" type="text/css" />
+    <script src="./ej2.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+    <div id="container">
+        <b>Default</b>
+        <br><br><br>
+        <input id="default" />
+    </div>
+
+
+
+    <script>
+
+        const items = [];
+        for (let i = 0; i < 5; i++) {
+            const topLevelId = this.getRandomId();
+            items.push({
+                id: topLevelId,
+                name: 'Top Level Item ' + topLevelId,
+                hasChild: true
+            });
+
+            for (let c = 0; c < 20; c++) {
+                const childId = this.getRandomId();
+                items.push({
+                    id: childId,
+                    pid: topLevelId,
+                    name: 'Second Level Item ' + childId,
+                    hasChild: true
+                });
+
+                for (let cc = 0; cc < 10; cc++) {
+                    const subChildId = this.getRandomId();
+                    items.push({
+                        id: subChildId,
+                        pid: childId,
+                        name: 'Third Level Item ' + subChildId,
+                        hasChild: true
+                    });
+
+                    for (let ccc = 0; ccc < 10; ccc++) {
+                        const subSubChildId = this.getRandomId();
+                        items.push({
+                            id: subSubChildId,
+                            pid: subChildId,
+                            name: 'Fourth Level Item ' + subSubChildId,
+                            hasChild: false
+                        });
+                    }
+                }
+            }
+        }
+function  getRandomId() {
+    const min = Math.ceil(0);
+    const max = Math.floor(9999999);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+        //Initialize DropwDown control
+        var ddTreeObj = new ej.dropdowns.DropDownTree({
+            fields: {
+                dataSource: items,
+                value: 'id',
+                parentValue: 'pid',
+                text: 'name',
+                hasChildren: 'hasChild'
+            },
+            showCheckBox: true,
+            mode: "Delimiter",
+            treeSettings: {
+                expandOn: 'Auto',
+                loadOnDemand: true,
+                autoCheck: true
+            },
+            change: function() {
+                let start = Math.floor(Date.now() / 1);
+                this.destroy();
+                let time = Math.floor(Date.now() / 1) - start;
+                alert("Destroyed!! "+ "It takes " +  time + " ms"+ " to destroy " +  items.length +  "nodes");
+            }
+        });
+        //Render initialized TreeView
+        ddTreeObj.appendTo("#default");
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>
