@@ -1,0 +1,4051 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0": {
+      "Markdig/0.24.0": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.1/Markdig.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Markdig.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Authorization/5.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Metadata": "5.0.5",
+          "Microsoft.Extensions.Logging.Abstractions": "5.0.0",
+          "Microsoft.Extensions.Options": "5.0.0"
+        },
+        "compile": {
+          "lib/net5.0/Microsoft.AspNetCore.Authorization.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Microsoft.AspNetCore.Authorization.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Components/5.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Authorization": "5.0.5",
+          "Microsoft.AspNetCore.Components.Analyzers": "5.0.5"
+        },
+        "compile": {
+          "lib/net5.0/Microsoft.AspNetCore.Components.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Microsoft.AspNetCore.Components.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Components.Analyzers/5.0.5": {
+        "type": "package",
+        "build": {
+          "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
+        }
+      },
+      "Microsoft.AspNetCore.Components.Forms/5.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "5.0.5"
+        },
+        "compile": {
+          "lib/net5.0/Microsoft.AspNetCore.Components.Forms.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Microsoft.AspNetCore.Components.Forms.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Components.Web/5.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "5.0.5",
+          "Microsoft.AspNetCore.Components.Forms": "5.0.5",
+          "Microsoft.Extensions.DependencyInjection": "5.0.1",
+          "Microsoft.JSInterop": "5.0.5",
+          "System.IO.Pipelines": "5.0.1"
+        },
+        "compile": {
+          "lib/net5.0/Microsoft.AspNetCore.Components.Web.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Microsoft.AspNetCore.Components.Web.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Components.WebAssembly/5.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.Web": "5.0.5",
+          "Microsoft.Extensions.Configuration.Binder": "5.0.0",
+          "Microsoft.Extensions.Configuration.Json": "5.0.0",
+          "Microsoft.Extensions.Logging": "5.0.0",
+          "Microsoft.JSInterop.WebAssembly": "5.0.5"
+        },
+        "compile": {
+          "lib/net5.0/Microsoft.AspNetCore.Components.WebAssembly.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Microsoft.AspNetCore.Components.WebAssembly.dll": {}
+        },
+        "build": {
+          "build/net5.0/_._": {}
+        }
+      },
+      "Microsoft.AspNetCore.Components.WebAssembly.Server/5.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/Microsoft.AspNetCore.Components.WebAssembly.Server.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Microsoft.AspNetCore.Components.WebAssembly.Server.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ],
+        "build": {
+          "build/Microsoft.AspNetCore.Components.WebAssembly.Server.targets": {}
+        }
+      },
+      "Microsoft.AspNetCore.JsonPatch/5.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.7.0",
+          "Newtonsoft.Json": "12.0.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.JsonPatch.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.JsonPatch.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Metadata/5.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/Microsoft.AspNetCore.Metadata.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Microsoft.AspNetCore.Metadata.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Mvc.NewtonsoftJson/5.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.JsonPatch": "5.0.5",
+          "Newtonsoft.Json": "12.0.2",
+          "Newtonsoft.Json.Bson": "1.0.2"
+        },
+        "compile": {
+          "lib/net5.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Microsoft.CSharp/4.7.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.Caching.Abstractions/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "2.2.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Caching.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Caching.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Caching.Memory/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Caching.Abstractions": "2.2.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.2.0",
+          "Microsoft.Extensions.Options": "2.2.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "5.0.0",
+          "Microsoft.Extensions.Primitives": "5.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration.Abstractions/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "5.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration.Binder/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "5.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration.FileExtensions/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "5.0.0",
+          "Microsoft.Extensions.Configuration.Abstractions": "5.0.0",
+          "Microsoft.Extensions.FileProviders.Abstractions": "5.0.0",
+          "Microsoft.Extensions.FileProviders.Physical": "5.0.0",
+          "Microsoft.Extensions.Primitives": "5.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.FileExtensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.FileExtensions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration.Json/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "5.0.0",
+          "Microsoft.Extensions.Configuration.Abstractions": "5.0.0",
+          "Microsoft.Extensions.Configuration.FileExtensions": "5.0.0",
+          "Microsoft.Extensions.FileProviders.Abstractions": "5.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/Microsoft.Extensions.Configuration.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.Extensions.Configuration.Json.dll": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection/5.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0"
+        },
+        "compile": {
+          "lib/net5.0/Microsoft.Extensions.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Microsoft.Extensions.DependencyInjection.dll": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.FileProviders.Abstractions/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "5.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.FileProviders.Physical/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.FileProviders.Abstractions": "5.0.0",
+          "Microsoft.Extensions.FileSystemGlobbing": "5.0.0",
+          "Microsoft.Extensions.Primitives": "5.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Physical.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Physical.dll": {}
+        }
+      },
+      "Microsoft.Extensions.FileSystemGlobbing/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.FileSystemGlobbing.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.FileSystemGlobbing.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Logging/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection": "5.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "5.0.0",
+          "Microsoft.Extensions.Options": "5.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/Microsoft.Extensions.Logging.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.Extensions.Logging.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Logging.Abstractions/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Options/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0",
+          "Microsoft.Extensions.Primitives": "5.0.0"
+        },
+        "compile": {
+          "lib/net5.0/Microsoft.Extensions.Options.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Microsoft.Extensions.Options.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Primitives/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.0/Microsoft.Extensions.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/Microsoft.Extensions.Primitives.dll": {}
+        }
+      },
+      "Microsoft.JSInterop/5.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/Microsoft.JSInterop.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Microsoft.JSInterop.dll": {}
+        }
+      },
+      "Microsoft.JSInterop.WebAssembly/5.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.JSInterop": "5.0.5"
+        },
+        "compile": {
+          "lib/net5.0/Microsoft.JSInterop.WebAssembly.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Microsoft.JSInterop.WebAssembly.dll": {}
+        }
+      },
+      "Microsoft.NETCore.Platforms/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/_._": {}
+        }
+      },
+      "Microsoft.Win32.SystemEvents/4.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "2.0.0"
+        },
+        "compile": {
+          "ref/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Win32.SystemEvents.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netcoreapp2.0/Microsoft.Win32.SystemEvents.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "NETStandard.Library/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0"
+        },
+        "compile": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "build": {
+          "build/netstandard2.0/NETStandard.Library.targets": {}
+        }
+      },
+      "Newtonsoft.Json/12.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Newtonsoft.Json.Bson/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.Bson.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.Bson.dll": {}
+        }
+      },
+      "SkiaSharp/2.80.2": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/SkiaSharp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/SkiaSharp.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/osx/native/libSkiaSharp.dylib": {
+            "assetType": "native",
+            "rid": "osx"
+          },
+          "runtimes/win-arm64/native/libSkiaSharp.dll": {
+            "assetType": "native",
+            "rid": "win-arm64"
+          },
+          "runtimes/win-x64/native/libSkiaSharp.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/libSkiaSharp.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      },
+      "Syncfusion.Blazor.BarcodeGenerator/19.2.0.51": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Blazor.Core": "19.2.0.51"
+        },
+        "compile": {
+          "lib/net5.0/Syncfusion.Blazor.BarcodeGenerator.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Syncfusion.Blazor.BarcodeGenerator.dll": {}
+        },
+        "build": {
+          "buildTransitive/Syncfusion.Blazor.BarcodeGenerator.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Syncfusion.Blazor.BarcodeGenerator.props": {}
+        }
+      },
+      "Syncfusion.Blazor.BulletChart/19.2.0.51": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Blazor.Core": "19.2.0.51",
+          "Syncfusion.Blazor.Data": "19.2.0.51",
+          "Syncfusion.Blazor.DataVizCommon": "19.2.0.51",
+          "Syncfusion.PdfExport.Net.Core": "19.2.0.51"
+        },
+        "compile": {
+          "lib/net5.0/Syncfusion.Blazor.BulletChart.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Syncfusion.Blazor.BulletChart.dll": {}
+        },
+        "build": {
+          "buildTransitive/Syncfusion.Blazor.BulletChart.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Syncfusion.Blazor.BulletChart.props": {}
+        }
+      },
+      "Syncfusion.Blazor.Buttons/19.2.0.51": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Blazor.Core": "19.2.0.51"
+        },
+        "compile": {
+          "lib/net5.0/Syncfusion.Blazor.Buttons.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Syncfusion.Blazor.Buttons.dll": {}
+        },
+        "build": {
+          "buildTransitive/Syncfusion.Blazor.Buttons.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Syncfusion.Blazor.Buttons.props": {}
+        }
+      },
+      "Syncfusion.Blazor.Calendars/19.2.0.51": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Blazor.Buttons": "19.2.0.51",
+          "Syncfusion.Blazor.Core": "19.2.0.51",
+          "Syncfusion.Blazor.Inputs": "19.2.0.51",
+          "Syncfusion.Blazor.Lists": "19.2.0.51"
+        },
+        "compile": {
+          "lib/net5.0/Syncfusion.Blazor.Calendars.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Syncfusion.Blazor.Calendars.dll": {}
+        },
+        "build": {
+          "buildTransitive/Syncfusion.Blazor.Calendars.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Syncfusion.Blazor.Calendars.props": {}
+        }
+      },
+      "Syncfusion.Blazor.Cards/19.2.0.51": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Blazor.Core": "19.2.0.51",
+          "Syncfusion.Blazor.Data": "19.2.0.51"
+        },
+        "compile": {
+          "lib/net5.0/Syncfusion.Blazor.Cards.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Syncfusion.Blazor.Cards.dll": {}
+        }
+      },
+      "Syncfusion.Blazor.Charts/19.2.0.51": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Blazor.Core": "19.2.0.51",
+          "Syncfusion.Blazor.Data": "19.2.0.51",
+          "Syncfusion.Blazor.DataVizCommon": "19.2.0.51",
+          "Syncfusion.PdfExport.Net.Core": "19.2.0.51"
+        },
+        "compile": {
+          "lib/net5.0/Syncfusion.Blazor.Charts.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Syncfusion.Blazor.Charts.dll": {}
+        },
+        "build": {
+          "buildTransitive/Syncfusion.Blazor.Charts.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Syncfusion.Blazor.Charts.props": {}
+        }
+      },
+      "Syncfusion.Blazor.CircularGauge/19.2.0.51": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Blazor.Core": "19.2.0.51",
+          "Syncfusion.PdfExport.Net.Core": "19.2.0.51"
+        },
+        "compile": {
+          "lib/net5.0/Syncfusion.Blazor.CircularGauge.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Syncfusion.Blazor.CircularGauge.dll": {}
+        },
+        "build": {
+          "buildTransitive/Syncfusion.Blazor.CircularGauge.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Syncfusion.Blazor.CircularGauge.props": {}
+        }
+      },
+      "Syncfusion.Blazor.Core/19.2.0.51": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.Web": "5.0.0",
+          "Microsoft.CSharp": "4.7.0",
+          "Newtonsoft.Json": "12.0.3",
+          "Syncfusion.Blazor.Themes": "19.2.0.51",
+          "Syncfusion.Licensing": "19.2.0.51"
+        },
+        "compile": {
+          "lib/net5.0/Syncfusion.Blazor.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Syncfusion.Blazor.Core.dll": {}
+        },
+        "build": {
+          "buildTransitive/Syncfusion.Blazor.Core.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Syncfusion.Blazor.Core.props": {}
+        }
+      },
+      "Syncfusion.Blazor.Data/19.2.0.51": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Blazor.Core": "19.2.0.51"
+        },
+        "compile": {
+          "lib/net5.0/Syncfusion.Blazor.Data.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Syncfusion.Blazor.Data.dll": {}
+        },
+        "build": {
+          "buildTransitive/Syncfusion.Blazor.Data.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Syncfusion.Blazor.Data.props": {}
+        }
+      },
+      "Syncfusion.Blazor.DataVizCommon/19.2.0.51": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Blazor.Core": "19.2.0.51"
+        },
+        "compile": {
+          "lib/net5.0/Syncfusion.Blazor.DataVizCommon.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Syncfusion.Blazor.DataVizCommon.dll": {}
+        }
+      },
+      "Syncfusion.Blazor.Diagram/19.2.0.51": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Blazor.Core": "19.2.0.51",
+          "Syncfusion.Blazor.Data": "19.2.0.51",
+          "Syncfusion.Blazor.Navigations": "19.2.0.51",
+          "Syncfusion.Blazor.Popups": "19.2.0.51"
+        },
+        "compile": {
+          "lib/net5.0/Syncfusion.Blazor.Diagram.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Syncfusion.Blazor.Diagram.dll": {}
+        },
+        "build": {
+          "buildTransitive/Syncfusion.Blazor.Diagram.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Syncfusion.Blazor.Diagram.props": {}
+        }
+      },
+      "Syncfusion.Blazor.Diagrams/19.2.0.51": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Blazor.Core": "19.2.0.51",
+          "Syncfusion.Blazor.Data": "19.2.0.51",
+          "Syncfusion.Blazor.Navigations": "19.2.0.51",
+          "Syncfusion.Blazor.Popups": "19.2.0.51"
+        },
+        "compile": {
+          "lib/net5.0/Syncfusion.Blazor.Diagrams.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Syncfusion.Blazor.Diagrams.dll": {}
+        },
+        "build": {
+          "buildTransitive/Syncfusion.Blazor.Diagrams.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Syncfusion.Blazor.Diagrams.props": {}
+        }
+      },
+      "Syncfusion.Blazor.DropDowns/19.2.0.51": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Blazor.Buttons": "19.2.0.51",
+          "Syncfusion.Blazor.Core": "19.2.0.51",
+          "Syncfusion.Blazor.Data": "19.2.0.51",
+          "Syncfusion.Blazor.Inputs": "19.2.0.51",
+          "Syncfusion.Blazor.Spinner": "19.2.0.51"
+        },
+        "compile": {
+          "lib/net5.0/Syncfusion.Blazor.DropDowns.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Syncfusion.Blazor.DropDowns.dll": {}
+        },
+        "build": {
+          "buildTransitive/Syncfusion.Blazor.DropDowns.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Syncfusion.Blazor.DropDowns.props": {}
+        }
+      },
+      "Syncfusion.Blazor.FileManager/19.2.0.51": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Blazor.Buttons": "19.2.0.51",
+          "Syncfusion.Blazor.Core": "19.2.0.51",
+          "Syncfusion.Blazor.Data": "19.2.0.51",
+          "Syncfusion.Blazor.Grid": "19.2.0.51",
+          "Syncfusion.Blazor.Inputs": "19.2.0.51",
+          "Syncfusion.Blazor.Layouts": "19.2.0.51",
+          "Syncfusion.Blazor.Lists": "19.2.0.51",
+          "Syncfusion.Blazor.Navigations": "19.2.0.51",
+          "Syncfusion.Blazor.Popups": "19.2.0.51",
+          "Syncfusion.Blazor.Spinner": "19.2.0.51",
+          "Syncfusion.Blazor.SplitButtons": "19.2.0.51"
+        },
+        "compile": {
+          "lib/net5.0/Syncfusion.Blazor.FileManager.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Syncfusion.Blazor.FileManager.dll": {}
+        },
+        "build": {
+          "buildTransitive/Syncfusion.Blazor.FileManager.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Syncfusion.Blazor.FileManager.props": {}
+        }
+      },
+      "Syncfusion.Blazor.Gantt/19.2.0.51": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Blazor.Buttons": "19.2.0.51",
+          "Syncfusion.Blazor.Calendars": "19.2.0.51",
+          "Syncfusion.Blazor.Core": "19.2.0.51",
+          "Syncfusion.Blazor.Data": "19.2.0.51",
+          "Syncfusion.Blazor.DropDowns": "19.2.0.51",
+          "Syncfusion.Blazor.Grid": "19.2.0.51",
+          "Syncfusion.Blazor.Inputs": "19.2.0.51",
+          "Syncfusion.Blazor.Layouts": "19.2.0.51",
+          "Syncfusion.Blazor.Lists": "19.2.0.51",
+          "Syncfusion.Blazor.Navigations": "19.2.0.51",
+          "Syncfusion.Blazor.Popups": "19.2.0.51",
+          "Syncfusion.Blazor.RichTextEditor": "19.2.0.51",
+          "Syncfusion.Blazor.Spinner": "19.2.0.51",
+          "Syncfusion.Blazor.TreeGrid": "19.2.0.51"
+        },
+        "compile": {
+          "lib/net5.0/Syncfusion.Blazor.Gantt.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Syncfusion.Blazor.Gantt.dll": {}
+        },
+        "build": {
+          "buildTransitive/Syncfusion.Blazor.Gantt.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Syncfusion.Blazor.Gantt.props": {}
+        }
+      },
+      "Syncfusion.Blazor.Grid/19.2.0.51": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Blazor.Buttons": "19.2.0.51",
+          "Syncfusion.Blazor.Calendars": "19.2.0.51",
+          "Syncfusion.Blazor.Core": "19.2.0.51",
+          "Syncfusion.Blazor.Data": "19.2.0.51",
+          "Syncfusion.Blazor.DropDowns": "19.2.0.51",
+          "Syncfusion.Blazor.Inputs": "19.2.0.51",
+          "Syncfusion.Blazor.Navigations": "19.2.0.51",
+          "Syncfusion.Blazor.Popups": "19.2.0.51",
+          "Syncfusion.Blazor.Spinner": "19.2.0.51",
+          "Syncfusion.ExcelExport.Net.Core": "19.2.0.51",
+          "Syncfusion.PdfExport.Net.Core": "19.2.0.51"
+        },
+        "compile": {
+          "lib/net5.0/Syncfusion.Blazor.Grids.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Syncfusion.Blazor.Grids.dll": {}
+        },
+        "build": {
+          "buildTransitive/Syncfusion.Blazor.Grid.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Syncfusion.Blazor.Grid.props": {}
+        }
+      },
+      "Syncfusion.Blazor.HeatMap/19.2.0.51": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Blazor.Core": "19.2.0.51",
+          "Syncfusion.Blazor.Data": "19.2.0.51",
+          "Syncfusion.Blazor.DataVizCommon": "19.2.0.51",
+          "Syncfusion.PdfExport.Net.Core": "19.2.0.51"
+        },
+        "compile": {
+          "lib/net5.0/Syncfusion.Blazor.HeatMap.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Syncfusion.Blazor.HeatMap.dll": {}
+        },
+        "build": {
+          "buildTransitive/Syncfusion.Blazor.HeatMap.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Syncfusion.Blazor.HeatMap.props": {}
+        }
+      },
+      "Syncfusion.Blazor.InPlaceEditor/19.2.0.51": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Blazor.Buttons": "19.2.0.51",
+          "Syncfusion.Blazor.Core": "19.2.0.51",
+          "Syncfusion.Blazor.DropDowns": "19.2.0.51",
+          "Syncfusion.Blazor.Inputs": "19.2.0.51",
+          "Syncfusion.Blazor.Popups": "19.2.0.51",
+          "Syncfusion.Blazor.Spinner": "19.2.0.51"
+        },
+        "compile": {
+          "lib/net5.0/Syncfusion.Blazor.InPlaceEditor.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Syncfusion.Blazor.InPlaceEditor.dll": {}
+        },
+        "build": {
+          "buildTransitive/Syncfusion.Blazor.InPlaceEditor.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Syncfusion.Blazor.InPlaceEditor.props": {}
+        }
+      },
+      "Syncfusion.Blazor.Inputs/19.2.0.51": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Blazor.Core": "19.2.0.51",
+          "Syncfusion.Blazor.Data": "19.2.0.51",
+          "Syncfusion.Blazor.Popups": "19.2.0.51",
+          "Syncfusion.Blazor.Spinner": "19.2.0.51",
+          "Syncfusion.Blazor.SplitButtons": "19.2.0.51"
+        },
+        "compile": {
+          "lib/net5.0/Syncfusion.Blazor.Inputs.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Syncfusion.Blazor.Inputs.dll": {}
+        },
+        "build": {
+          "buildTransitive/Syncfusion.Blazor.Inputs.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Syncfusion.Blazor.Inputs.props": {}
+        }
+      },
+      "Syncfusion.Blazor.Kanban/19.2.0.51": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Blazor.Buttons": "19.2.0.51",
+          "Syncfusion.Blazor.Core": "19.2.0.51",
+          "Syncfusion.Blazor.Data": "19.2.0.51",
+          "Syncfusion.Blazor.DropDowns": "19.2.0.51",
+          "Syncfusion.Blazor.Inputs": "19.2.0.51",
+          "Syncfusion.Blazor.Lists": "19.2.0.51",
+          "Syncfusion.Blazor.Popups": "19.2.0.51",
+          "Syncfusion.Blazor.Spinner": "19.2.0.51"
+        },
+        "compile": {
+          "lib/net5.0/Syncfusion.Blazor.Kanban.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Syncfusion.Blazor.Kanban.dll": {}
+        },
+        "build": {
+          "buildTransitive/Syncfusion.Blazor.Kanban.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Syncfusion.Blazor.Kanban.props": {}
+        }
+      },
+      "Syncfusion.Blazor.Layouts/19.2.0.51": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Blazor.Core": "19.2.0.51",
+          "Syncfusion.Blazor.Data": "19.2.0.51"
+        },
+        "compile": {
+          "lib/net5.0/Syncfusion.Blazor.Layouts.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Syncfusion.Blazor.Layouts.dll": {}
+        },
+        "build": {
+          "buildTransitive/Syncfusion.Blazor.Layouts.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Syncfusion.Blazor.Layouts.props": {}
+        }
+      },
+      "Syncfusion.Blazor.LinearGauge/19.2.0.51": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Blazor.Core": "19.2.0.51",
+          "Syncfusion.PdfExport.Net.Core": "19.2.0.51"
+        },
+        "compile": {
+          "lib/net5.0/Syncfusion.Blazor.LinearGauge.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Syncfusion.Blazor.LinearGauge.dll": {}
+        },
+        "build": {
+          "buildTransitive/Syncfusion.Blazor.LinearGauge.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Syncfusion.Blazor.LinearGauge.props": {}
+        }
+      },
+      "Syncfusion.Blazor.Lists/19.2.0.51": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Blazor.Buttons": "19.2.0.51",
+          "Syncfusion.Blazor.Core": "19.2.0.51",
+          "Syncfusion.Blazor.Data": "19.2.0.51"
+        },
+        "compile": {
+          "lib/net5.0/Syncfusion.Blazor.Lists.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Syncfusion.Blazor.Lists.dll": {}
+        },
+        "build": {
+          "buildTransitive/Syncfusion.Blazor.Lists.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Syncfusion.Blazor.Lists.props": {}
+        }
+      },
+      "Syncfusion.Blazor.Maps/19.2.0.51": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Blazor.Core": "19.2.0.51",
+          "Syncfusion.Blazor.Data": "19.2.0.51",
+          "Syncfusion.PdfExport.Net.Core": "19.2.0.51"
+        },
+        "compile": {
+          "lib/net5.0/Syncfusion.Blazor.Maps.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Syncfusion.Blazor.Maps.dll": {}
+        },
+        "build": {
+          "buildTransitive/Syncfusion.Blazor.Maps.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Syncfusion.Blazor.Maps.props": {}
+        }
+      },
+      "Syncfusion.Blazor.Navigations/19.2.0.51": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Blazor.Buttons": "19.2.0.51",
+          "Syncfusion.Blazor.Core": "19.2.0.51",
+          "Syncfusion.Blazor.Data": "19.2.0.51",
+          "Syncfusion.Blazor.Inputs": "19.2.0.51",
+          "Syncfusion.Blazor.Lists": "19.2.0.51",
+          "Syncfusion.Blazor.Popups": "19.2.0.51"
+        },
+        "compile": {
+          "lib/net5.0/Syncfusion.Blazor.Navigations.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Syncfusion.Blazor.Navigations.dll": {}
+        },
+        "build": {
+          "buildTransitive/Syncfusion.Blazor.Navigations.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Syncfusion.Blazor.Navigations.props": {}
+        }
+      },
+      "Syncfusion.Blazor.Notifications/19.2.0.51": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Blazor.Buttons": "19.2.0.51",
+          "Syncfusion.Blazor.Core": "19.2.0.51"
+        },
+        "compile": {
+          "lib/net5.0/Syncfusion.Blazor.Notifications.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Syncfusion.Blazor.Notifications.dll": {}
+        },
+        "build": {
+          "buildTransitive/Syncfusion.Blazor.Notifications.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Syncfusion.Blazor.Notifications.props": {}
+        }
+      },
+      "Syncfusion.Blazor.PdfViewer/19.2.0.51": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Blazor.Buttons": "19.2.0.51",
+          "Syncfusion.Blazor.Core": "19.2.0.51",
+          "Syncfusion.Blazor.Data": "19.2.0.51",
+          "Syncfusion.Blazor.DropDowns": "19.2.0.51",
+          "Syncfusion.Blazor.InPlaceEditor": "19.2.0.51",
+          "Syncfusion.Blazor.Inputs": "19.2.0.51",
+          "Syncfusion.Blazor.Lists": "19.2.0.51",
+          "Syncfusion.Blazor.Navigations": "19.2.0.51",
+          "Syncfusion.Blazor.Notifications": "19.2.0.51",
+          "Syncfusion.Blazor.Popups": "19.2.0.51",
+          "Syncfusion.Blazor.SplitButtons": "19.2.0.51"
+        },
+        "compile": {
+          "lib/net5.0/Syncfusion.Blazor.PdfViewer.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Syncfusion.Blazor.PdfViewer.dll": {}
+        },
+        "build": {
+          "buildTransitive/Syncfusion.Blazor.PdfViewer.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Syncfusion.Blazor.PdfViewer.props": {}
+        }
+      },
+      "Syncfusion.Blazor.PivotTable/19.2.0.51": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Blazor.Buttons": "19.2.0.51",
+          "Syncfusion.Blazor.Charts": "19.2.0.51",
+          "Syncfusion.Blazor.Core": "19.2.0.51",
+          "Syncfusion.Blazor.Data": "19.2.0.51",
+          "Syncfusion.Blazor.DropDowns": "19.2.0.51",
+          "Syncfusion.Blazor.Grid": "19.2.0.51",
+          "Syncfusion.Blazor.Inputs": "19.2.0.51",
+          "Syncfusion.Blazor.Navigations": "19.2.0.51",
+          "Syncfusion.Blazor.Popups": "19.2.0.51",
+          "Syncfusion.Blazor.Spinner": "19.2.0.51",
+          "Syncfusion.Blazor.SplitButtons": "19.2.0.51",
+          "Syncfusion.ExcelExport.Net.Core": "19.2.0.51",
+          "Syncfusion.PdfExport.Net.Core": "19.2.0.51"
+        },
+        "compile": {
+          "lib/net5.0/Syncfusion.Blazor.PivotView.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Syncfusion.Blazor.PivotView.dll": {}
+        },
+        "build": {
+          "buildTransitive/Syncfusion.Blazor.PivotTable.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Syncfusion.Blazor.PivotTable.props": {}
+        }
+      },
+      "Syncfusion.Blazor.Popups/19.2.0.51": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Blazor.Buttons": "19.2.0.51",
+          "Syncfusion.Blazor.Core": "19.2.0.51"
+        },
+        "compile": {
+          "lib/net5.0/Syncfusion.Blazor.Popups.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Syncfusion.Blazor.Popups.dll": {}
+        },
+        "build": {
+          "buildTransitive/Syncfusion.Blazor.Popups.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Syncfusion.Blazor.Popups.props": {}
+        }
+      },
+      "Syncfusion.Blazor.ProgressBar/19.2.0.51": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Blazor.Core": "19.2.0.51",
+          "Syncfusion.Blazor.Data": "19.2.0.51"
+        },
+        "compile": {
+          "lib/net5.0/Syncfusion.Blazor.ProgressBar.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Syncfusion.Blazor.ProgressBar.dll": {}
+        },
+        "build": {
+          "buildTransitive/Syncfusion.Blazor.ProgressBar.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Syncfusion.Blazor.ProgressBar.props": {}
+        }
+      },
+      "Syncfusion.Blazor.QueryBuilder/19.2.0.51": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Blazor.Buttons": "19.2.0.51",
+          "Syncfusion.Blazor.Calendars": "19.2.0.51",
+          "Syncfusion.Blazor.Core": "19.2.0.51",
+          "Syncfusion.Blazor.Data": "19.2.0.51",
+          "Syncfusion.Blazor.DropDowns": "19.2.0.51",
+          "Syncfusion.Blazor.Inputs": "19.2.0.51",
+          "Syncfusion.Blazor.Popups": "19.2.0.51",
+          "Syncfusion.Blazor.SplitButtons": "19.2.0.51"
+        },
+        "compile": {
+          "lib/net5.0/Syncfusion.Blazor.QueryBuilder.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Syncfusion.Blazor.QueryBuilder.dll": {}
+        },
+        "build": {
+          "buildTransitive/Syncfusion.Blazor.QueryBuilder.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Syncfusion.Blazor.QueryBuilder.props": {}
+        }
+      },
+      "Syncfusion.Blazor.RangeNavigator/19.2.0.51": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Blazor.Calendars": "19.2.0.51",
+          "Syncfusion.Blazor.Charts": "19.2.0.51",
+          "Syncfusion.Blazor.Core": "19.2.0.51",
+          "Syncfusion.Blazor.Data": "19.2.0.51",
+          "Syncfusion.Blazor.DataVizCommon": "19.2.0.51",
+          "Syncfusion.Blazor.Navigations": "19.2.0.51",
+          "Syncfusion.PdfExport.Net.Core": "19.2.0.51"
+        },
+        "compile": {
+          "lib/net5.0/Syncfusion.Blazor.RangeNavigator.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Syncfusion.Blazor.RangeNavigator.dll": {}
+        },
+        "build": {
+          "buildTransitive/Syncfusion.Blazor.RangeNavigator.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Syncfusion.Blazor.RangeNavigator.props": {}
+        }
+      },
+      "Syncfusion.Blazor.RichTextEditor/19.2.0.51": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Blazor.Buttons": "19.2.0.51",
+          "Syncfusion.Blazor.Core": "19.2.0.51",
+          "Syncfusion.Blazor.Inputs": "19.2.0.51",
+          "Syncfusion.Blazor.Navigations": "19.2.0.51",
+          "Syncfusion.Blazor.Popups": "19.2.0.51",
+          "Syncfusion.Blazor.SplitButtons": "19.2.0.51"
+        },
+        "compile": {
+          "lib/net5.0/Syncfusion.Blazor.RichTextEditor.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Syncfusion.Blazor.RichTextEditor.dll": {}
+        },
+        "build": {
+          "buildTransitive/Syncfusion.Blazor.RichTextEditor.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Syncfusion.Blazor.RichTextEditor.props": {}
+        }
+      },
+      "Syncfusion.Blazor.Schedule/19.2.0.51": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Blazor.Buttons": "19.2.0.51",
+          "Syncfusion.Blazor.Calendars": "19.2.0.51",
+          "Syncfusion.Blazor.Core": "19.2.0.51",
+          "Syncfusion.Blazor.Data": "19.2.0.51",
+          "Syncfusion.Blazor.DropDowns": "19.2.0.51",
+          "Syncfusion.Blazor.Inputs": "19.2.0.51",
+          "Syncfusion.Blazor.Navigations": "19.2.0.51",
+          "Syncfusion.Blazor.Popups": "19.2.0.51",
+          "Syncfusion.Blazor.Spinner": "19.2.0.51",
+          "Syncfusion.ExcelExport.Net.Core": "19.2.0.51"
+        },
+        "compile": {
+          "lib/net5.0/Syncfusion.Blazor.Schedule.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Syncfusion.Blazor.Schedule.dll": {}
+        },
+        "build": {
+          "buildTransitive/Syncfusion.Blazor.Schedule.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Syncfusion.Blazor.Schedule.props": {}
+        }
+      },
+      "Syncfusion.Blazor.SmithChart/19.2.0.51": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Blazor.Core": "19.2.0.51",
+          "Syncfusion.Blazor.Data": "19.2.0.51",
+          "Syncfusion.Blazor.DataVizCommon": "19.2.0.51",
+          "Syncfusion.PdfExport.Net.Core": "19.2.0.51"
+        },
+        "compile": {
+          "lib/net5.0/Syncfusion.Blazor.SmithChart.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Syncfusion.Blazor.SmithChart.dll": {}
+        },
+        "build": {
+          "buildTransitive/Syncfusion.Blazor.SmithChart.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Syncfusion.Blazor.SmithChart.props": {}
+        }
+      },
+      "Syncfusion.Blazor.Sparkline/19.2.0.51": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Blazor.Core": "19.2.0.51",
+          "Syncfusion.Blazor.Data": "19.2.0.51",
+          "Syncfusion.Blazor.DataVizCommon": "19.2.0.51",
+          "Syncfusion.Blazor.Popups": "19.2.0.51"
+        },
+        "compile": {
+          "lib/net5.0/Syncfusion.Blazor.Sparkline.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Syncfusion.Blazor.Sparkline.dll": {}
+        },
+        "build": {
+          "buildTransitive/Syncfusion.Blazor.Sparkline.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Syncfusion.Blazor.Sparkline.props": {}
+        }
+      },
+      "Syncfusion.Blazor.Spinner/19.2.0.51": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Blazor.Core": "19.2.0.51"
+        },
+        "compile": {
+          "lib/net5.0/Syncfusion.Blazor.Spinner.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Syncfusion.Blazor.Spinner.dll": {}
+        },
+        "build": {
+          "buildTransitive/Syncfusion.Blazor.Spinner.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Syncfusion.Blazor.Spinner.props": {}
+        }
+      },
+      "Syncfusion.Blazor.SplitButtons/19.2.0.51": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Blazor.Buttons": "19.2.0.51",
+          "Syncfusion.Blazor.Core": "19.2.0.51",
+          "Syncfusion.Blazor.Popups": "19.2.0.51",
+          "Syncfusion.Blazor.Spinner": "19.2.0.51"
+        },
+        "compile": {
+          "lib/net5.0/Syncfusion.Blazor.SplitButtons.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Syncfusion.Blazor.SplitButtons.dll": {}
+        },
+        "build": {
+          "buildTransitive/Syncfusion.Blazor.SplitButtons.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Syncfusion.Blazor.SplitButtons.props": {}
+        }
+      },
+      "Syncfusion.Blazor.StockChart/19.2.0.51": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Blazor.RangeNavigator": "19.2.0.51"
+        },
+        "compile": {
+          "lib/net5.0/Syncfusion.Blazor.StockChart.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Syncfusion.Blazor.StockChart.dll": {}
+        },
+        "build": {
+          "buildTransitive/Syncfusion.Blazor.StockChart.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Syncfusion.Blazor.StockChart.props": {}
+        }
+      },
+      "Syncfusion.Blazor.Themes/19.2.0.51": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/Syncfusion.Blazor.Themes.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Syncfusion.Blazor.Themes.dll": {}
+        },
+        "build": {
+          "buildTransitive/Syncfusion.Blazor.Themes.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Syncfusion.Blazor.Themes.props": {}
+        }
+      },
+      "Syncfusion.Blazor.TreeGrid/19.2.0.51": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Blazor.Core": "19.2.0.51",
+          "Syncfusion.Blazor.Data": "19.2.0.51",
+          "Syncfusion.Blazor.Grid": "19.2.0.51",
+          "Syncfusion.Blazor.Navigations": "19.2.0.51",
+          "Syncfusion.Blazor.Popups": "19.2.0.51",
+          "Syncfusion.Blazor.Spinner": "19.2.0.51"
+        },
+        "compile": {
+          "lib/net5.0/Syncfusion.Blazor.TreeGrid.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Syncfusion.Blazor.TreeGrid.dll": {}
+        },
+        "build": {
+          "buildTransitive/Syncfusion.Blazor.TreeGrid.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Syncfusion.Blazor.TreeGrid.props": {}
+        }
+      },
+      "Syncfusion.Blazor.TreeMap/19.2.0.51": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Blazor.Core": "19.2.0.51",
+          "Syncfusion.Blazor.Data": "19.2.0.51",
+          "Syncfusion.PdfExport.Net.Core": "19.2.0.51"
+        },
+        "compile": {
+          "lib/net5.0/Syncfusion.Blazor.TreeMap.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Syncfusion.Blazor.TreeMap.dll": {}
+        },
+        "build": {
+          "buildTransitive/Syncfusion.Blazor.TreeMap.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Syncfusion.Blazor.TreeMap.props": {}
+        }
+      },
+      "Syncfusion.Blazor.WordProcessor/19.2.0.51": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.3",
+          "Syncfusion.Blazor.Calendars": "19.2.0.51",
+          "Syncfusion.Blazor.Core": "19.2.0.51",
+          "Syncfusion.Blazor.Data": "19.2.0.51",
+          "Syncfusion.Blazor.DropDowns": "19.2.0.51",
+          "Syncfusion.Blazor.Navigations": "19.2.0.51",
+          "Syncfusion.WordProcessor.AspNet.Core": "19.2.0.51"
+        },
+        "compile": {
+          "lib/net5.0/Syncfusion.Blazor.DocumentEditor.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Syncfusion.Blazor.DocumentEditor.dll": {}
+        },
+        "build": {
+          "buildTransitive/Syncfusion.Blazor.WordProcessor.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Syncfusion.Blazor.WordProcessor.props": {}
+        }
+      },
+      "Syncfusion.Compression.Net.Core/19.2.0.51": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "2.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Syncfusion.Compression.Portable.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Syncfusion.Compression.Portable.dll": {}
+        }
+      },
+      "Syncfusion.DocIO.Net.Core/19.2.0.51": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Compression.Net.Core": "19.2.0.51",
+          "Syncfusion.Licensing": "19.2.0.51",
+          "Syncfusion.OfficeChart.Net.Core": "19.2.0.51",
+          "System.Text.Encoding.CodePages": "4.4.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Syncfusion.DocIO.Portable.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Syncfusion.DocIO.Portable.dll": {}
+        }
+      },
+      "Syncfusion.DocIORenderer.Net.Core/19.2.0.51": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp": "2.80.2",
+          "Syncfusion.Compression.Net.Core": "19.2.0.51",
+          "Syncfusion.DocIO.Net.Core": "19.2.0.51",
+          "Syncfusion.OfficeChart.Net.Core": "19.2.0.51",
+          "Syncfusion.Pdf.Net.Core": "19.2.0.51",
+          "Syncfusion.SkiaSharpHelper.Net.Core": "19.2.0.51"
+        },
+        "compile": {
+          "lib/netstandard2.0/Syncfusion.DocIORenderer.Portable.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Syncfusion.DocIORenderer.Portable.dll": {}
+        }
+      },
+      "Syncfusion.ExcelExport.Net.Core/19.2.0.51": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "2.0.0"
+        },
+        "compile": {
+          "lib/net5.0/Syncfusion.ExcelExport.Net.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Syncfusion.ExcelExport.Net.dll": {}
+        }
+      },
+      "Syncfusion.Licensing/19.2.0.51": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/Syncfusion.Licensing.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.OfficeChart.Net.Core/19.2.0.51": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "2.0.0",
+          "Syncfusion.Compression.Net.Core": "19.2.0.51"
+        },
+        "compile": {
+          "lib/netstandard2.0/Syncfusion.OfficeChart.Portable.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Syncfusion.OfficeChart.Portable.dll": {}
+        }
+      },
+      "Syncfusion.Pdf.Net.Core/19.2.0.51": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "2.0.0",
+          "Syncfusion.Compression.Net.Core": "19.2.0.51",
+          "Syncfusion.Licensing": "19.2.0.51",
+          "System.Text.Encoding.CodePages": "4.4.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Syncfusion.Pdf.Portable.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Syncfusion.Pdf.Portable.dll": {}
+        }
+      },
+      "Syncfusion.PdfExport.Net.Core/19.2.0.51": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "2.0.0"
+        },
+        "compile": {
+          "lib/net5.0/Syncfusion.PdfExport.Net.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Syncfusion.PdfExport.Net.dll": {}
+        }
+      },
+      "Syncfusion.PdfViewer.AspNet.Core.Windows/19.2.0.51": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Caching.Memory": "2.2.0",
+          "Newtonsoft.Json": "10.0.1",
+          "Syncfusion.Compression.Net.Core": "19.2.0.51",
+          "Syncfusion.Pdf.Net.Core": "19.2.0.51",
+          "System.Drawing.Common": "4.5.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Syncfusion.PdfViewer.AspNet.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Syncfusion.PdfViewer.AspNet.Core.dll": {}
+        }
+      },
+      "Syncfusion.Presentation.Net.Core/19.2.0.51": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Compression.Net.Core": "19.2.0.51",
+          "Syncfusion.Licensing": "19.2.0.51",
+          "Syncfusion.OfficeChart.Net.Core": "19.2.0.51"
+        },
+        "compile": {
+          "lib/netstandard2.0/Syncfusion.Presentation.Portable.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Syncfusion.Presentation.Portable.dll": {}
+        }
+      },
+      "Syncfusion.PresentationRenderer.Net.Core/19.2.0.51": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp": "2.80.2",
+          "Syncfusion.Compression.Net.Core": "19.2.0.51",
+          "Syncfusion.OfficeChart.Net.Core": "19.2.0.51",
+          "Syncfusion.Pdf.Net.Core": "19.2.0.51",
+          "Syncfusion.Presentation.Net.Core": "19.2.0.51",
+          "Syncfusion.SkiaSharpHelper.Net.Core": "19.2.0.51"
+        },
+        "compile": {
+          "lib/netstandard2.0/Syncfusion.PresentationRenderer.Portable.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Syncfusion.PresentationRenderer.Portable.dll": {}
+        }
+      },
+      "Syncfusion.SkiaSharpHelper.Net.Core/19.2.0.51": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "2.0.0",
+          "SkiaSharp": "2.80.2",
+          "Syncfusion.Compression.Net.Core": "19.2.0.51"
+        },
+        "compile": {
+          "lib/netstandard2.0/Syncfusion.SkiaSharpHelper.Portable.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Syncfusion.SkiaSharpHelper.Portable.dll": {}
+        }
+      },
+      "Syncfusion.WordProcessor.AspNet.Core/19.2.0.51": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "10.0.1",
+          "Syncfusion.Compression.Net.Core": "19.2.0.51",
+          "Syncfusion.DocIO.Net.Core": "19.2.0.51",
+          "Syncfusion.OfficeChart.Net.Core": "19.2.0.51"
+        },
+        "compile": {
+          "lib/netstandard2.0/Syncfusion.WordProcessor.AspNet.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Syncfusion.WordProcessor.AspNet.Core.dll": {}
+        }
+      },
+      "Syncfusion.XlsIO.Net.Core/19.2.0.51": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "2.0.0",
+          "Syncfusion.Compression.Net.Core": "19.2.0.51",
+          "Syncfusion.Licensing": "19.2.0.51"
+        },
+        "compile": {
+          "lib/netstandard2.0/Syncfusion.XlsIO.Portable.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Syncfusion.XlsIO.Portable.dll": {}
+        }
+      },
+      "Syncfusion.XlsIORenderer.Net.Core/19.2.0.51": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "2.0.0",
+          "SkiaSharp": "2.80.2",
+          "Syncfusion.Compression.Net.Core": "19.2.0.51",
+          "Syncfusion.Pdf.Net.Core": "19.2.0.51",
+          "Syncfusion.SkiaSharpHelper.Net.Core": "19.2.0.51",
+          "Syncfusion.XlsIO.Net.Core": "19.2.0.51"
+        },
+        "compile": {
+          "lib/netstandard2.0/Syncfusion.XlsIORenderer.Portable.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Syncfusion.XlsIORenderer.Portable.dll": {}
+        }
+      },
+      "System.Drawing.Common/4.5.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "2.0.0",
+          "Microsoft.Win32.SystemEvents": "4.5.0"
+        },
+        "compile": {
+          "ref/netstandard2.0/System.Drawing.Common.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Drawing.Common.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netcoreapp2.0/System.Drawing.Common.dll": {
+            "assetType": "runtime",
+            "rid": "unix"
+          },
+          "runtimes/win/lib/netcoreapp2.0/System.Drawing.Common.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.IO.Pipelines/5.0.1": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/System.IO.Pipelines.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/System.IO.Pipelines.dll": {}
+        }
+      },
+      "System.Memory/4.5.3": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.1/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/_._": {}
+        }
+      },
+      "System.Net.Http.Json/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/System.Net.Http.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/System.Net.Http.Json.dll": {}
+        }
+      },
+      "System.Text.Encoding.CodePages/4.4.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "2.0.0"
+        },
+        "compile": {
+          "ref/netstandard2.0/System.Text.Encoding.CodePages.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Text.Encoding.CodePages.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netcoreapp2.0/System.Text.Encoding.CodePages.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "BlazorDemos.Client/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "BlazorDemos.Shared": "1.0.0",
+          "Markdig": "0.24.0",
+          "Microsoft.AspNetCore.Components.WebAssembly": "5.0.5",
+          "Syncfusion.Blazor.BarcodeGenerator": "19.2.0",
+          "Syncfusion.Blazor.BulletChart": "19.2.0",
+          "Syncfusion.Blazor.Buttons": "19.2.0",
+          "Syncfusion.Blazor.Calendars": "19.2.0",
+          "Syncfusion.Blazor.Cards": "19.2.0",
+          "Syncfusion.Blazor.Charts": "19.2.0",
+          "Syncfusion.Blazor.CircularGauge": "19.2.0",
+          "Syncfusion.Blazor.Diagram": "19.2.0",
+          "Syncfusion.Blazor.Diagrams": "19.2.0",
+          "Syncfusion.Blazor.DropDowns": "19.2.0",
+          "Syncfusion.Blazor.FileManager": "19.2.0",
+          "Syncfusion.Blazor.Gantt": "19.2.0",
+          "Syncfusion.Blazor.Grid": "19.2.0",
+          "Syncfusion.Blazor.HeatMap": "19.2.0",
+          "Syncfusion.Blazor.InPlaceEditor": "19.2.0",
+          "Syncfusion.Blazor.Inputs": "19.2.0",
+          "Syncfusion.Blazor.Kanban": "19.2.0",
+          "Syncfusion.Blazor.Layouts": "19.2.0",
+          "Syncfusion.Blazor.LinearGauge": "19.2.0",
+          "Syncfusion.Blazor.Maps": "19.2.0",
+          "Syncfusion.Blazor.Navigations": "19.2.0",
+          "Syncfusion.Blazor.Notifications": "19.2.0",
+          "Syncfusion.Blazor.PdfViewer": "19.2.0",
+          "Syncfusion.Blazor.PivotTable": "19.2.0",
+          "Syncfusion.Blazor.Popups": "19.2.0",
+          "Syncfusion.Blazor.ProgressBar": "19.2.0",
+          "Syncfusion.Blazor.QueryBuilder": "19.2.0",
+          "Syncfusion.Blazor.RangeNavigator": "19.2.0",
+          "Syncfusion.Blazor.RichTextEditor": "19.2.0",
+          "Syncfusion.Blazor.Schedule": "19.2.0",
+          "Syncfusion.Blazor.SmithChart": "19.2.0",
+          "Syncfusion.Blazor.Sparkline": "19.2.0",
+          "Syncfusion.Blazor.Spinner": "19.2.0",
+          "Syncfusion.Blazor.SplitButtons": "19.2.0",
+          "Syncfusion.Blazor.StockChart": "19.2.0",
+          "Syncfusion.Blazor.TreeGrid": "19.2.0",
+          "Syncfusion.Blazor.TreeMap": "19.2.0",
+          "Syncfusion.Blazor.WordProcessor": "19.2.0",
+          "Syncfusion.DocIO.Net.Core": "19.2.0",
+          "Syncfusion.DocIORenderer.Net.Core": "19.2.0",
+          "Syncfusion.Licensing": "19.2.0",
+          "Syncfusion.Pdf.Net.Core": "19.2.0",
+          "Syncfusion.Presentation.Net.Core": "19.2.0",
+          "Syncfusion.PresentationRenderer.Net.Core": "19.2.0",
+          "Syncfusion.XlsIO.Net.Core": "19.2.0",
+          "Syncfusion.XlsIORenderer.Net.Core": "19.2.0",
+          "System.Net.Http.Json": "5.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BlazorDemos.Client.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BlazorDemos.Client.dll": {}
+        }
+      },
+      "BlazorDemos.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/BlazorDemos.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BlazorDemos.Shared.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Markdig/0.24.0": {
+      "sha512": "xvoxO3Ck4mNflc+62d5LCI8xCVmj+SEdpGPptUZmPtbqK88iZkSxtprJWUadHNt8tXY6rFx8oHGpEw1Qcu3lAw==",
+      "type": "package",
+      "path": "markdig/0.24.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/Markdig.dll",
+        "lib/net452/Markdig.xml",
+        "lib/netcoreapp2.1/Markdig.dll",
+        "lib/netcoreapp2.1/Markdig.xml",
+        "lib/netcoreapp3.1/Markdig.dll",
+        "lib/netcoreapp3.1/Markdig.xml",
+        "lib/netstandard2.0/Markdig.dll",
+        "lib/netstandard2.0/Markdig.xml",
+        "lib/netstandard2.1/Markdig.dll",
+        "lib/netstandard2.1/Markdig.xml",
+        "markdig.0.24.0.nupkg.sha512",
+        "markdig.nuspec",
+        "markdig.png"
+      ]
+    },
+    "Microsoft.AspNetCore.Authorization/5.0.5": {
+      "sha512": "pQSx1MrLJlKwlEclliO9aUwKxe9EKI2Mff39VE1t5VYOjqsMyI2ujWKGI6XAUsnmC0Bta67GZ1k4DbQZd7tJKg==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.authorization/5.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.AspNetCore.Authorization.dll",
+        "lib/net461/Microsoft.AspNetCore.Authorization.xml",
+        "lib/net5.0/Microsoft.AspNetCore.Authorization.dll",
+        "lib/net5.0/Microsoft.AspNetCore.Authorization.xml",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Authorization.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Authorization.xml",
+        "microsoft.aspnetcore.authorization.5.0.5.nupkg.sha512",
+        "microsoft.aspnetcore.authorization.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Components/5.0.5": {
+      "sha512": "Hmx7CyjqhmcMKUjLAOS0S2cJaJ+jO2Tw0nHNIKVIkzU/5a3vvtT39x/kOXlwJiTK6+nWHlZ7HzL2TaTkeNON/w==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.components/5.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.txt",
+        "lib/net5.0/Microsoft.AspNetCore.Components.dll",
+        "lib/net5.0/Microsoft.AspNetCore.Components.xml",
+        "microsoft.aspnetcore.components.5.0.5.nupkg.sha512",
+        "microsoft.aspnetcore.components.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Components.Analyzers/5.0.5": {
+      "sha512": "psHOvHEWJC5BDNCAp7BJQMhv68mbhZMPFArf4RArrSYzIYMxQPDS/DgnAs3getHzQhHqEkrAhfEa7YXyW+bZSw==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.components.analyzers/5.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.txt",
+        "analyzers/dotnet/cs/Microsoft.AspNetCore.Components.Analyzers.dll",
+        "build/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets",
+        "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets",
+        "microsoft.aspnetcore.components.analyzers.5.0.5.nupkg.sha512",
+        "microsoft.aspnetcore.components.analyzers.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Components.Forms/5.0.5": {
+      "sha512": "Kq5Zb30TkHMpTi7Ri6jgrNikFkAv7zFPW50m3iCXdY28eB7+z4VuSnuI+8y/c2LDAPsen3HXwqDMURfgDEYe8A==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.components.forms/5.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.txt",
+        "lib/net5.0/Microsoft.AspNetCore.Components.Forms.dll",
+        "lib/net5.0/Microsoft.AspNetCore.Components.Forms.xml",
+        "microsoft.aspnetcore.components.forms.5.0.5.nupkg.sha512",
+        "microsoft.aspnetcore.components.forms.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Components.Web/5.0.5": {
+      "sha512": "F5Xh3UQcA9sHYoX6Cui7cxc8taIFqf85C/aL419ZscYe/e4m11Hx0RZc38bis7cedAOGtE9zE2SUGR6K19gy8A==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.components.web/5.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.txt",
+        "lib/net5.0/Microsoft.AspNetCore.Components.Web.dll",
+        "lib/net5.0/Microsoft.AspNetCore.Components.Web.xml",
+        "microsoft.aspnetcore.components.web.5.0.5.nupkg.sha512",
+        "microsoft.aspnetcore.components.web.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Components.WebAssembly/5.0.5": {
+      "sha512": "TX2HvVV+7DlDaELH1oLyz/ROFntLJyPrm45FPOm4hkqiHw2n/FdRzLJ9WIV/PKzZXAKRGU9z7g4UyZN3IG0a8Q==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.components.webassembly/5.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/net5.0/Microsoft.AspNetCore.Components.WebAssembly.props",
+        "build/net5.0/blazor.webassembly.js",
+        "lib/net5.0/Microsoft.AspNetCore.Components.WebAssembly.dll",
+        "lib/net5.0/Microsoft.AspNetCore.Components.WebAssembly.xml",
+        "microsoft.aspnetcore.components.webassembly.5.0.5.nupkg.sha512",
+        "microsoft.aspnetcore.components.webassembly.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Components.WebAssembly.Server/5.0.5": {
+      "sha512": "Af8hZ7xowD86zboSPlh+rxTrKHhzsJQs1Y6O9Kt9scLVDbdIaPtq5LjRWeeDPCppMpZC7aPhdxZL1DqsQ73hLA==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.components.webassembly.server/5.0.5",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/Microsoft.AspNetCore.Components.WebAssembly.Server.targets",
+        "lib/net5.0/Microsoft.AspNetCore.Components.WebAssembly.Server.dll",
+        "lib/net5.0/Microsoft.AspNetCore.Components.WebAssembly.Server.xml",
+        "microsoft.aspnetcore.components.webassembly.server.5.0.5.nupkg.sha512",
+        "microsoft.aspnetcore.components.webassembly.server.nuspec",
+        "tools/BlazorDebugProxy/BrowserDebugHost.dll",
+        "tools/BlazorDebugProxy/BrowserDebugHost.runtimeconfig.json",
+        "tools/BlazorDebugProxy/BrowserDebugProxy.dll",
+        "tools/BlazorDebugProxy/Microsoft.CodeAnalysis.CSharp.dll",
+        "tools/BlazorDebugProxy/Microsoft.CodeAnalysis.dll",
+        "tools/BlazorDebugProxy/Mono.Cecil.Pdb.dll",
+        "tools/BlazorDebugProxy/Mono.Cecil.Rocks.dll",
+        "tools/BlazorDebugProxy/Mono.Cecil.dll",
+        "tools/BlazorDebugProxy/Newtonsoft.Json.dll"
+      ]
+    },
+    "Microsoft.AspNetCore.JsonPatch/5.0.5": {
+      "sha512": "ViYrCnQFWP3BHVyq73YYe7OijodEp0qBt3l0H3tQtdGB83fb/uEBPGXGrSvfCLkLJPa/Rk4/ZH3oEQcQao2VUg==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.jsonpatch/5.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.AspNetCore.JsonPatch.dll",
+        "lib/net461/Microsoft.AspNetCore.JsonPatch.xml",
+        "lib/netstandard2.0/Microsoft.AspNetCore.JsonPatch.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.JsonPatch.xml",
+        "microsoft.aspnetcore.jsonpatch.5.0.5.nupkg.sha512",
+        "microsoft.aspnetcore.jsonpatch.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Metadata/5.0.5": {
+      "sha512": "SD+puPsFLQXWwzoMiXv8lpFGHyZg0gKp3OP2EXg3eRlwJQOMaUGMIqbCdfHGR4MBaUZtqY/tU68H1bzb6+FSxA==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.metadata/5.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.AspNetCore.Metadata.dll",
+        "lib/net461/Microsoft.AspNetCore.Metadata.xml",
+        "lib/net5.0/Microsoft.AspNetCore.Metadata.dll",
+        "lib/net5.0/Microsoft.AspNetCore.Metadata.xml",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Metadata.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Metadata.xml",
+        "microsoft.aspnetcore.metadata.5.0.5.nupkg.sha512",
+        "microsoft.aspnetcore.metadata.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Mvc.NewtonsoftJson/5.0.5": {
+      "sha512": "3Vd2hbJwrHFOk6dYpqFQ10BBLeJvMPmbx3hxqH5erxSlvFOufnq3C9Nnz+hPpaqazRAQcOgkAWGvBsB3AM2XlQ==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.mvc.newtonsoftjson/5.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net5.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll",
+        "lib/net5.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.xml",
+        "microsoft.aspnetcore.mvc.newtonsoftjson.5.0.5.nupkg.sha512",
+        "microsoft.aspnetcore.mvc.newtonsoftjson.nuspec"
+      ]
+    },
+    "Microsoft.CSharp/4.7.0": {
+      "sha512": "pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
+      "type": "package",
+      "path": "microsoft.csharp/4.7.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/netcore50/Microsoft.CSharp.dll",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.3/Microsoft.CSharp.dll",
+        "lib/netstandard2.0/Microsoft.CSharp.dll",
+        "lib/netstandard2.0/Microsoft.CSharp.xml",
+        "lib/portable-net45+win8+wp8+wpa81/_._",
+        "lib/uap10.0.16299/_._",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "microsoft.csharp.4.7.0.nupkg.sha512",
+        "microsoft.csharp.nuspec",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/netcore50/Microsoft.CSharp.dll",
+        "ref/netcore50/Microsoft.CSharp.xml",
+        "ref/netcore50/de/Microsoft.CSharp.xml",
+        "ref/netcore50/es/Microsoft.CSharp.xml",
+        "ref/netcore50/fr/Microsoft.CSharp.xml",
+        "ref/netcore50/it/Microsoft.CSharp.xml",
+        "ref/netcore50/ja/Microsoft.CSharp.xml",
+        "ref/netcore50/ko/Microsoft.CSharp.xml",
+        "ref/netcore50/ru/Microsoft.CSharp.xml",
+        "ref/netcore50/zh-hans/Microsoft.CSharp.xml",
+        "ref/netcore50/zh-hant/Microsoft.CSharp.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.0/Microsoft.CSharp.dll",
+        "ref/netstandard1.0/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/de/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/es/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/fr/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/it/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ja/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ko/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ru/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/zh-hans/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/zh-hant/Microsoft.CSharp.xml",
+        "ref/netstandard2.0/Microsoft.CSharp.dll",
+        "ref/netstandard2.0/Microsoft.CSharp.xml",
+        "ref/portable-net45+win8+wp8+wpa81/_._",
+        "ref/uap10.0.16299/_._",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Microsoft.Extensions.Caching.Abstractions/2.2.0": {
+      "sha512": "spsJkYo8gGJapaxTSQFN/wqA+ghpJMLwB4ZyTB+fSdpd7AmMFP/YSpIcGmczcw4KggpxLGhLk7lCkSIlgvHaqQ==",
+      "type": "package",
+      "path": "microsoft.extensions.caching.abstractions/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Extensions.Caching.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Caching.Abstractions.xml",
+        "microsoft.extensions.caching.abstractions.2.2.0.nupkg.sha512",
+        "microsoft.extensions.caching.abstractions.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.Caching.Memory/2.2.0": {
+      "sha512": "yFs44RzB2Pzfoj4uk+mEz3MTTQKyeWb8gDhv5GyVPfHnLv0eQhGwzbw/5WpxAcVyOgG/H3/0ULY6g0/7/B+r7w==",
+      "type": "package",
+      "path": "microsoft.extensions.caching.memory/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.xml",
+        "microsoft.extensions.caching.memory.2.2.0.nupkg.sha512",
+        "microsoft.extensions.caching.memory.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.Configuration/5.0.0": {
+      "sha512": "LN322qEKHjuVEhhXueTUe7RNePooZmS8aGid5aK2woX3NPjSnONFyKUc6+JknOS6ce6h2tCLfKPTBXE3mN/6Ag==",
+      "type": "package",
+      "path": "microsoft.extensions.configuration/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.Configuration.dll",
+        "lib/net461/Microsoft.Extensions.Configuration.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.xml",
+        "microsoft.extensions.configuration.5.0.0.nupkg.sha512",
+        "microsoft.extensions.configuration.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Microsoft.Extensions.Configuration.Abstractions/5.0.0": {
+      "sha512": "ETjSBHMp3OAZ4HxGQYpwyGsD8Sw5FegQXphi0rpoGMT74S4+I2mm7XJEswwn59XAaKOzC15oDSOWEE8SzDCd6Q==",
+      "type": "package",
+      "path": "microsoft.extensions.configuration.abstractions/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.Configuration.Abstractions.dll",
+        "lib/net461/Microsoft.Extensions.Configuration.Abstractions.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.xml",
+        "microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
+        "microsoft.extensions.configuration.abstractions.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Microsoft.Extensions.Configuration.Binder/5.0.0": {
+      "sha512": "Of1Irt1+NzWO+yEYkuDh5TpT4On7LKl98Q9iLqCdOZps6XXEWDj3AKtmyvzJPVXZe4apmkJJIiDL7rR1yC+hjQ==",
+      "type": "package",
+      "path": "microsoft.extensions.configuration.binder/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.Configuration.Binder.dll",
+        "lib/net461/Microsoft.Extensions.Configuration.Binder.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.xml",
+        "microsoft.extensions.configuration.binder.5.0.0.nupkg.sha512",
+        "microsoft.extensions.configuration.binder.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Microsoft.Extensions.Configuration.FileExtensions/5.0.0": {
+      "sha512": "rRdspYKA18ViPOISwAihhCMbusHsARCOtDMwa23f+BGEdIjpKPlhs3LLjmKlxfhpGXBjIsS0JpXcChjRUN+PAw==",
+      "type": "package",
+      "path": "microsoft.extensions.configuration.fileextensions/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.Configuration.FileExtensions.dll",
+        "lib/net461/Microsoft.Extensions.Configuration.FileExtensions.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.FileExtensions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.FileExtensions.xml",
+        "microsoft.extensions.configuration.fileextensions.5.0.0.nupkg.sha512",
+        "microsoft.extensions.configuration.fileextensions.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Microsoft.Extensions.Configuration.Json/5.0.0": {
+      "sha512": "Pak8ymSUfdzPfBTLHxeOwcR32YDbuVfhnH2hkfOLnJNQd19ItlBdpMjIDY9C5O/nS2Sn9bzDMai0ZrvF7KyY/Q==",
+      "type": "package",
+      "path": "microsoft.extensions.configuration.json/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.Configuration.Json.dll",
+        "lib/net461/Microsoft.Extensions.Configuration.Json.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Json.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Json.xml",
+        "lib/netstandard2.1/Microsoft.Extensions.Configuration.Json.dll",
+        "lib/netstandard2.1/Microsoft.Extensions.Configuration.Json.xml",
+        "microsoft.extensions.configuration.json.5.0.0.nupkg.sha512",
+        "microsoft.extensions.configuration.json.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Microsoft.Extensions.DependencyInjection/5.0.1": {
+      "sha512": "//mDNrYeiJ0eh/awFhDFJQzkRVra/njU5Y4fyK7X29g5HScrzbUkKOKlyTtygthcGFt4zNC8G5CFCjb/oizomA==",
+      "type": "package",
+      "path": "microsoft.extensions.dependencyinjection/5.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/net461/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/net5.0/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/net5.0/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.xml",
+        "microsoft.extensions.dependencyinjection.5.0.1.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/5.0.0": {
+      "sha512": "ORj7Zh81gC69TyvmcUm9tSzytcy8AVousi+IVRAI8nLieQjOFryRusSFh7+aLk16FN9pQNqJAiMd7BTKINK0kA==",
+      "type": "package",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/net461/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.abstractions.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Microsoft.Extensions.FileProviders.Abstractions/5.0.0": {
+      "sha512": "iuZIiZ3mteEb+nsUqpGXKx2cGF+cv6gWPd5jqQI4hzqdiJ6I94ddLjKhQOuRW1lueHwocIw30xbSHGhQj0zjdQ==",
+      "type": "package",
+      "path": "microsoft.extensions.fileproviders.abstractions/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.FileProviders.Abstractions.dll",
+        "lib/net461/Microsoft.Extensions.FileProviders.Abstractions.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.xml",
+        "microsoft.extensions.fileproviders.abstractions.5.0.0.nupkg.sha512",
+        "microsoft.extensions.fileproviders.abstractions.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Microsoft.Extensions.FileProviders.Physical/5.0.0": {
+      "sha512": "1rkd8UO2qf21biwO7X0hL9uHP7vtfmdv/NLvKgCRHkdz1XnW8zVQJXyEYiN68WYpExgtVWn55QF0qBzgfh1mGg==",
+      "type": "package",
+      "path": "microsoft.extensions.fileproviders.physical/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.FileProviders.Physical.dll",
+        "lib/net461/Microsoft.Extensions.FileProviders.Physical.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Physical.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Physical.xml",
+        "microsoft.extensions.fileproviders.physical.5.0.0.nupkg.sha512",
+        "microsoft.extensions.fileproviders.physical.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Microsoft.Extensions.FileSystemGlobbing/5.0.0": {
+      "sha512": "ArliS8lGk8sWRtrWpqI8yUVYJpRruPjCDT+EIjrgkA/AAPRctlAkRISVZ334chAKktTLzD1+PK8F5IZpGedSqA==",
+      "type": "package",
+      "path": "microsoft.extensions.filesystemglobbing/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.FileSystemGlobbing.dll",
+        "lib/net461/Microsoft.Extensions.FileSystemGlobbing.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.FileSystemGlobbing.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.FileSystemGlobbing.xml",
+        "microsoft.extensions.filesystemglobbing.5.0.0.nupkg.sha512",
+        "microsoft.extensions.filesystemglobbing.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Microsoft.Extensions.Logging/5.0.0": {
+      "sha512": "MgOwK6tPzB6YNH21wssJcw/2MKwee8b2gI7SllYfn6rvTpIrVvVS5HAjSU2vqSku1fwqRvWP0MdIi14qjd93Aw==",
+      "type": "package",
+      "path": "microsoft.extensions.logging/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.Logging.dll",
+        "lib/net461/Microsoft.Extensions.Logging.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Logging.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Logging.xml",
+        "lib/netstandard2.1/Microsoft.Extensions.Logging.dll",
+        "lib/netstandard2.1/Microsoft.Extensions.Logging.xml",
+        "microsoft.extensions.logging.5.0.0.nupkg.sha512",
+        "microsoft.extensions.logging.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Microsoft.Extensions.Logging.Abstractions/5.0.0": {
+      "sha512": "NxP6ahFcBnnSfwNBi2KH2Oz8Xl5Sm2krjId/jRR3I7teFphwiUoUeZPwTNA21EX+5PtjqmyAvKaOeBXcJjcH/w==",
+      "type": "package",
+      "path": "microsoft.extensions.logging.abstractions/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.Logging.Abstractions.dll",
+        "lib/net461/Microsoft.Extensions.Logging.Abstractions.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.xml",
+        "microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
+        "microsoft.extensions.logging.abstractions.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Microsoft.Extensions.Options/5.0.0": {
+      "sha512": "CBvR92TCJ5uBIdd9/HzDSrxYak+0W/3+yxrNg8Qm6Bmrkh5L+nu6m3WeazQehcZ5q1/6dDA7J5YdQjim0165zg==",
+      "type": "package",
+      "path": "microsoft.extensions.options/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.Options.dll",
+        "lib/net461/Microsoft.Extensions.Options.xml",
+        "lib/net5.0/Microsoft.Extensions.Options.dll",
+        "lib/net5.0/Microsoft.Extensions.Options.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Options.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Options.xml",
+        "microsoft.extensions.options.5.0.0.nupkg.sha512",
+        "microsoft.extensions.options.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Microsoft.Extensions.Primitives/5.0.0": {
+      "sha512": "cI/VWn9G1fghXrNDagX9nYaaB/nokkZn0HYAawGaELQrl8InSezfe9OnfPZLcJq3esXxygh3hkq2c3qoV3SDyQ==",
+      "type": "package",
+      "path": "microsoft.extensions.primitives/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.Primitives.dll",
+        "lib/net461/Microsoft.Extensions.Primitives.xml",
+        "lib/netcoreapp3.0/Microsoft.Extensions.Primitives.dll",
+        "lib/netcoreapp3.0/Microsoft.Extensions.Primitives.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Primitives.xml",
+        "microsoft.extensions.primitives.5.0.0.nupkg.sha512",
+        "microsoft.extensions.primitives.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Microsoft.JSInterop/5.0.5": {
+      "sha512": "Ik1tdMAIb7i9vlv5pvF+aMVnoOXWUfRFMpiyHSMg+0spbcBqqq1vBVMuyqjh7PZlqWPyFqYrfToEonGh2ztT0w==",
+      "type": "package",
+      "path": "microsoft.jsinterop/5.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net5.0/Microsoft.JSInterop.dll",
+        "lib/net5.0/Microsoft.JSInterop.xml",
+        "microsoft.jsinterop.5.0.5.nupkg.sha512",
+        "microsoft.jsinterop.nuspec"
+      ]
+    },
+    "Microsoft.JSInterop.WebAssembly/5.0.5": {
+      "sha512": "TopUNF1c5pgTU2p4ZceBpV7NAEpacA1fs8tEbvb1c+nO2ppBCpZAVdDwu7ctHVaXzQBgxZxPLC+lLiFfNejBYQ==",
+      "type": "package",
+      "path": "microsoft.jsinterop.webassembly/5.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.txt",
+        "lib/net5.0/Microsoft.JSInterop.WebAssembly.dll",
+        "lib/net5.0/Microsoft.JSInterop.WebAssembly.xml",
+        "microsoft.jsinterop.webassembly.5.0.5.nupkg.sha512",
+        "microsoft.jsinterop.webassembly.nuspec"
+      ]
+    },
+    "Microsoft.NETCore.Platforms/2.0.0": {
+      "sha512": "VdLJOCXhZaEMY7Hm2GKiULmn7IEPFE4XC5LPSfBVCUIA8YLZVh846gtfBJalsPQF2PlzdD7ecX7DZEulJ402ZQ==",
+      "type": "package",
+      "path": "microsoft.netcore.platforms/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netstandard1.0/_._",
+        "microsoft.netcore.platforms.2.0.0.nupkg.sha512",
+        "microsoft.netcore.platforms.nuspec",
+        "runtime.json",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Microsoft.Win32.SystemEvents/4.5.0": {
+      "sha512": "LuI1oG+24TUj1ZRQQjM5Ew73BKnZE5NZ/7eAdh1o8ST5dPhUnJvIkiIn2re3MwnkRy6ELRnvEbBxHP8uALKhJw==",
+      "type": "package",
+      "path": "microsoft.win32.systemevents/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Win32.SystemEvents.dll",
+        "lib/netstandard2.0/Microsoft.Win32.SystemEvents.dll",
+        "microsoft.win32.systemevents.4.5.0.nupkg.sha512",
+        "microsoft.win32.systemevents.nuspec",
+        "ref/net461/Microsoft.Win32.SystemEvents.dll",
+        "ref/netstandard2.0/Microsoft.Win32.SystemEvents.dll",
+        "runtimes/win/lib/netcoreapp2.0/Microsoft.Win32.SystemEvents.dll",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "NETStandard.Library/2.0.0": {
+      "sha512": "7jnbRU+L08FXKMxqUflxEXtVymWvNOrS8yHgu9s6EM8Anr6T/wIX4nZ08j/u3Asz+tCufp3YVwFSEvFTPYmBPA==",
+      "type": "package",
+      "path": "netstandard.library/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "build/NETStandard.Library.targets",
+        "build/netstandard2.0/NETStandard.Library.targets",
+        "build/netstandard2.0/ref/Microsoft.Win32.Primitives.dll",
+        "build/netstandard2.0/ref/System.AppContext.dll",
+        "build/netstandard2.0/ref/System.Collections.Concurrent.dll",
+        "build/netstandard2.0/ref/System.Collections.NonGeneric.dll",
+        "build/netstandard2.0/ref/System.Collections.Specialized.dll",
+        "build/netstandard2.0/ref/System.Collections.dll",
+        "build/netstandard2.0/ref/System.ComponentModel.Composition.dll",
+        "build/netstandard2.0/ref/System.ComponentModel.EventBasedAsync.dll",
+        "build/netstandard2.0/ref/System.ComponentModel.Primitives.dll",
+        "build/netstandard2.0/ref/System.ComponentModel.TypeConverter.dll",
+        "build/netstandard2.0/ref/System.ComponentModel.dll",
+        "build/netstandard2.0/ref/System.Console.dll",
+        "build/netstandard2.0/ref/System.Core.dll",
+        "build/netstandard2.0/ref/System.Data.Common.dll",
+        "build/netstandard2.0/ref/System.Data.dll",
+        "build/netstandard2.0/ref/System.Diagnostics.Contracts.dll",
+        "build/netstandard2.0/ref/System.Diagnostics.Debug.dll",
+        "build/netstandard2.0/ref/System.Diagnostics.FileVersionInfo.dll",
+        "build/netstandard2.0/ref/System.Diagnostics.Process.dll",
+        "build/netstandard2.0/ref/System.Diagnostics.StackTrace.dll",
+        "build/netstandard2.0/ref/System.Diagnostics.TextWriterTraceListener.dll",
+        "build/netstandard2.0/ref/System.Diagnostics.Tools.dll",
+        "build/netstandard2.0/ref/System.Diagnostics.TraceSource.dll",
+        "build/netstandard2.0/ref/System.Diagnostics.Tracing.dll",
+        "build/netstandard2.0/ref/System.Drawing.Primitives.dll",
+        "build/netstandard2.0/ref/System.Drawing.dll",
+        "build/netstandard2.0/ref/System.Dynamic.Runtime.dll",
+        "build/netstandard2.0/ref/System.Globalization.Calendars.dll",
+        "build/netstandard2.0/ref/System.Globalization.Extensions.dll",
+        "build/netstandard2.0/ref/System.Globalization.dll",
+        "build/netstandard2.0/ref/System.IO.Compression.FileSystem.dll",
+        "build/netstandard2.0/ref/System.IO.Compression.ZipFile.dll",
+        "build/netstandard2.0/ref/System.IO.Compression.dll",
+        "build/netstandard2.0/ref/System.IO.FileSystem.DriveInfo.dll",
+        "build/netstandard2.0/ref/System.IO.FileSystem.Primitives.dll",
+        "build/netstandard2.0/ref/System.IO.FileSystem.Watcher.dll",
+        "build/netstandard2.0/ref/System.IO.FileSystem.dll",
+        "build/netstandard2.0/ref/System.IO.IsolatedStorage.dll",
+        "build/netstandard2.0/ref/System.IO.MemoryMappedFiles.dll",
+        "build/netstandard2.0/ref/System.IO.Pipes.dll",
+        "build/netstandard2.0/ref/System.IO.UnmanagedMemoryStream.dll",
+        "build/netstandard2.0/ref/System.IO.dll",
+        "build/netstandard2.0/ref/System.Linq.Expressions.dll",
+        "build/netstandard2.0/ref/System.Linq.Parallel.dll",
+        "build/netstandard2.0/ref/System.Linq.Queryable.dll",
+        "build/netstandard2.0/ref/System.Linq.dll",
+        "build/netstandard2.0/ref/System.Net.Http.dll",
+        "build/netstandard2.0/ref/System.Net.NameResolution.dll",
+        "build/netstandard2.0/ref/System.Net.NetworkInformation.dll",
+        "build/netstandard2.0/ref/System.Net.Ping.dll",
+        "build/netstandard2.0/ref/System.Net.Primitives.dll",
+        "build/netstandard2.0/ref/System.Net.Requests.dll",
+        "build/netstandard2.0/ref/System.Net.Security.dll",
+        "build/netstandard2.0/ref/System.Net.Sockets.dll",
+        "build/netstandard2.0/ref/System.Net.WebHeaderCollection.dll",
+        "build/netstandard2.0/ref/System.Net.WebSockets.Client.dll",
+        "build/netstandard2.0/ref/System.Net.WebSockets.dll",
+        "build/netstandard2.0/ref/System.Net.dll",
+        "build/netstandard2.0/ref/System.Numerics.dll",
+        "build/netstandard2.0/ref/System.ObjectModel.dll",
+        "build/netstandard2.0/ref/System.Reflection.Extensions.dll",
+        "build/netstandard2.0/ref/System.Reflection.Primitives.dll",
+        "build/netstandard2.0/ref/System.Reflection.dll",
+        "build/netstandard2.0/ref/System.Resources.Reader.dll",
+        "build/netstandard2.0/ref/System.Resources.ResourceManager.dll",
+        "build/netstandard2.0/ref/System.Resources.Writer.dll",
+        "build/netstandard2.0/ref/System.Runtime.CompilerServices.VisualC.dll",
+        "build/netstandard2.0/ref/System.Runtime.Extensions.dll",
+        "build/netstandard2.0/ref/System.Runtime.Handles.dll",
+        "build/netstandard2.0/ref/System.Runtime.InteropServices.RuntimeInformation.dll",
+        "build/netstandard2.0/ref/System.Runtime.InteropServices.dll",
+        "build/netstandard2.0/ref/System.Runtime.Numerics.dll",
+        "build/netstandard2.0/ref/System.Runtime.Serialization.Formatters.dll",
+        "build/netstandard2.0/ref/System.Runtime.Serialization.Json.dll",
+        "build/netstandard2.0/ref/System.Runtime.Serialization.Primitives.dll",
+        "build/netstandard2.0/ref/System.Runtime.Serialization.Xml.dll",
+        "build/netstandard2.0/ref/System.Runtime.Serialization.dll",
+        "build/netstandard2.0/ref/System.Runtime.dll",
+        "build/netstandard2.0/ref/System.Security.Claims.dll",
+        "build/netstandard2.0/ref/System.Security.Cryptography.Algorithms.dll",
+        "build/netstandard2.0/ref/System.Security.Cryptography.Csp.dll",
+        "build/netstandard2.0/ref/System.Security.Cryptography.Encoding.dll",
+        "build/netstandard2.0/ref/System.Security.Cryptography.Primitives.dll",
+        "build/netstandard2.0/ref/System.Security.Cryptography.X509Certificates.dll",
+        "build/netstandard2.0/ref/System.Security.Principal.dll",
+        "build/netstandard2.0/ref/System.Security.SecureString.dll",
+        "build/netstandard2.0/ref/System.ServiceModel.Web.dll",
+        "build/netstandard2.0/ref/System.Text.Encoding.Extensions.dll",
+        "build/netstandard2.0/ref/System.Text.Encoding.dll",
+        "build/netstandard2.0/ref/System.Text.RegularExpressions.dll",
+        "build/netstandard2.0/ref/System.Threading.Overlapped.dll",
+        "build/netstandard2.0/ref/System.Threading.Tasks.Parallel.dll",
+        "build/netstandard2.0/ref/System.Threading.Tasks.dll",
+        "build/netstandard2.0/ref/System.Threading.Thread.dll",
+        "build/netstandard2.0/ref/System.Threading.ThreadPool.dll",
+        "build/netstandard2.0/ref/System.Threading.Timer.dll",
+        "build/netstandard2.0/ref/System.Threading.dll",
+        "build/netstandard2.0/ref/System.Transactions.dll",
+        "build/netstandard2.0/ref/System.ValueTuple.dll",
+        "build/netstandard2.0/ref/System.Web.dll",
+        "build/netstandard2.0/ref/System.Windows.dll",
+        "build/netstandard2.0/ref/System.Xml.Linq.dll",
+        "build/netstandard2.0/ref/System.Xml.ReaderWriter.dll",
+        "build/netstandard2.0/ref/System.Xml.Serialization.dll",
+        "build/netstandard2.0/ref/System.Xml.XDocument.dll",
+        "build/netstandard2.0/ref/System.Xml.XPath.XDocument.dll",
+        "build/netstandard2.0/ref/System.Xml.XPath.dll",
+        "build/netstandard2.0/ref/System.Xml.XmlDocument.dll",
+        "build/netstandard2.0/ref/System.Xml.XmlSerializer.dll",
+        "build/netstandard2.0/ref/System.Xml.dll",
+        "build/netstandard2.0/ref/System.dll",
+        "build/netstandard2.0/ref/mscorlib.dll",
+        "build/netstandard2.0/ref/netstandard.dll",
+        "build/netstandard2.0/ref/netstandard.xml",
+        "lib/netstandard1.0/_._",
+        "netstandard.library.2.0.0.nupkg.sha512",
+        "netstandard.library.nuspec"
+      ]
+    },
+    "Newtonsoft.Json/12.0.3": {
+      "sha512": "6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+      "type": "package",
+      "path": "newtonsoft.json/12.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "newtonsoft.json.12.0.3.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    },
+    "Newtonsoft.Json.Bson/1.0.2": {
+      "sha512": "QYFyxhaABwmq3p/21VrZNYvCg3DaEoN/wUuw5nmfAf0X3HLjgupwhkEWdgfb9nvGAUIv3osmZoD3kKl4jxEmYQ==",
+      "type": "package",
+      "path": "newtonsoft.json.bson/1.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net45/Newtonsoft.Json.Bson.dll",
+        "lib/net45/Newtonsoft.Json.Bson.pdb",
+        "lib/net45/Newtonsoft.Json.Bson.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.Bson.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.Bson.pdb",
+        "lib/netstandard1.3/Newtonsoft.Json.Bson.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.Bson.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.Bson.pdb",
+        "lib/netstandard2.0/Newtonsoft.Json.Bson.xml",
+        "newtonsoft.json.bson.1.0.2.nupkg.sha512",
+        "newtonsoft.json.bson.nuspec"
+      ]
+    },
+    "SkiaSharp/2.80.2": {
+      "sha512": "D25rzdCwh+3L+XyXqpNa+H/yiLJbE3/R3K/XexwHyQjGdzZvSufFW3oqf3En7hhqSIsxsJ8f5NEZ0J5W5wlGBg==",
+      "type": "package",
+      "path": "skiasharp/2.80.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/monoandroid1.0/SkiaSharp.targets",
+        "build/monoandroid1.0/arm/libSkiaSharp.so",
+        "build/monoandroid1.0/arm64/libSkiaSharp.so",
+        "build/monoandroid1.0/x64/libSkiaSharp.so",
+        "build/monoandroid1.0/x86/libSkiaSharp.so",
+        "build/net462/SkiaSharp.targets",
+        "build/tizen40/SkiaSharp.targets",
+        "build/tizen40/arm/libSkiaSharp.so",
+        "build/tizen40/x86/libSkiaSharp.so",
+        "build/xamarinios1.0/SkiaSharp.targets",
+        "build/xamarinios1.0/libSkiaSharp.framework/Info.plist",
+        "build/xamarinios1.0/libSkiaSharp.framework/Modules/module.modulemap",
+        "build/xamarinios1.0/libSkiaSharp.framework/_CodeSignature/CodeResources",
+        "build/xamarinios1.0/libSkiaSharp.framework/libSkiaSharp",
+        "build/xamarinmac2.0/SkiaSharp.targets",
+        "build/xamarintvos1.0/SkiaSharp.targets",
+        "build/xamarintvos1.0/libSkiaSharp.framework/Info.plist",
+        "build/xamarintvos1.0/libSkiaSharp.framework/Modules/module.modulemap",
+        "build/xamarintvos1.0/libSkiaSharp.framework/_CodeSignature/CodeResources",
+        "build/xamarintvos1.0/libSkiaSharp.framework/libSkiaSharp",
+        "build/xamarinwatchos1.0/SkiaSharp.targets",
+        "build/xamarinwatchos1.0/libSkiaSharp.framework/Info.plist",
+        "build/xamarinwatchos1.0/libSkiaSharp.framework/Modules/module.modulemap",
+        "build/xamarinwatchos1.0/libSkiaSharp.framework/_CodeSignature/CodeResources",
+        "build/xamarinwatchos1.0/libSkiaSharp.framework/libSkiaSharp",
+        "buildTransitive/monoandroid1.0/SkiaSharp.targets",
+        "buildTransitive/net462/SkiaSharp.targets",
+        "buildTransitive/tizen40/SkiaSharp.targets",
+        "buildTransitive/xamarinios1.0/SkiaSharp.targets",
+        "buildTransitive/xamarinmac2.0/SkiaSharp.targets",
+        "buildTransitive/xamarintvos1.0/SkiaSharp.targets",
+        "buildTransitive/xamarinwatchos1.0/SkiaSharp.targets",
+        "lib/monoandroid1.0/SkiaSharp.dll",
+        "lib/monoandroid1.0/SkiaSharp.xml",
+        "lib/net462/SkiaSharp.dll",
+        "lib/net462/SkiaSharp.xml",
+        "lib/netstandard1.3/SkiaSharp.dll",
+        "lib/netstandard1.3/SkiaSharp.xml",
+        "lib/netstandard2.0/SkiaSharp.dll",
+        "lib/netstandard2.0/SkiaSharp.xml",
+        "lib/tizen40/SkiaSharp.dll",
+        "lib/tizen40/SkiaSharp.xml",
+        "lib/uap10.0.10240/SkiaSharp.dll",
+        "lib/uap10.0.10240/SkiaSharp.xml",
+        "lib/uap10.0.16299/SkiaSharp.dll",
+        "lib/uap10.0.16299/SkiaSharp.xml",
+        "lib/xamarinios1.0/SkiaSharp.dll",
+        "lib/xamarinios1.0/SkiaSharp.xml",
+        "lib/xamarinmac2.0/SkiaSharp.dll",
+        "lib/xamarinmac2.0/SkiaSharp.xml",
+        "lib/xamarintvos1.0/SkiaSharp.dll",
+        "lib/xamarintvos1.0/SkiaSharp.xml",
+        "lib/xamarinwatchos1.0/SkiaSharp.dll",
+        "lib/xamarinwatchos1.0/SkiaSharp.xml",
+        "runtimes/osx/native/libSkiaSharp.dylib",
+        "runtimes/win-arm64/native/libSkiaSharp.dll",
+        "runtimes/win-x64/native/libSkiaSharp.dll",
+        "runtimes/win-x86/native/libSkiaSharp.dll",
+        "runtimes/win10-arm/nativeassets/uap10.0/libEGL.dll",
+        "runtimes/win10-arm/nativeassets/uap10.0/libGLESv2.dll",
+        "runtimes/win10-arm/nativeassets/uap10.0/libSkiaSharp.dll",
+        "runtimes/win10-arm64/nativeassets/uap10.0/libEGL.dll",
+        "runtimes/win10-arm64/nativeassets/uap10.0/libGLESv2.dll",
+        "runtimes/win10-arm64/nativeassets/uap10.0/libSkiaSharp.dll",
+        "runtimes/win10-x64/nativeassets/uap10.0/libEGL.dll",
+        "runtimes/win10-x64/nativeassets/uap10.0/libGLESv2.dll",
+        "runtimes/win10-x64/nativeassets/uap10.0/libSkiaSharp.dll",
+        "runtimes/win10-x86/nativeassets/uap10.0/libEGL.dll",
+        "runtimes/win10-x86/nativeassets/uap10.0/libGLESv2.dll",
+        "runtimes/win10-x86/nativeassets/uap10.0/libSkiaSharp.dll",
+        "skiasharp.2.80.2.nupkg.sha512",
+        "skiasharp.nuspec"
+      ]
+    },
+    "Syncfusion.Blazor.BarcodeGenerator/19.2.0.51": {
+      "sha512": "qjsODFRfmT9B7dWB2Q+8rAzk7BSMhF1lCM9EZp9NCWhymEwoB8WAHMqwrW2nJVKDo97Hy/kaXTpBBSNPLs9mkA==",
+      "type": "package",
+      "path": "syncfusion.blazor.barcodegenerator/19.2.0.51",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "build/Syncfusion.Blazor.BarcodeGenerator.props",
+        "buildMultiTargeting/Syncfusion.Blazor.BarcodeGenerator.props",
+        "buildTransitive/Syncfusion.Blazor.BarcodeGenerator.props",
+        "lib/net5.0/Syncfusion.Blazor.BarcodeGenerator.dll",
+        "lib/netstandard2.1/Syncfusion.Blazor.BarcodeGenerator.dll",
+        "staticwebassets/scripts/sf-barcode-db3fc5.min.js",
+        "syncfusion.blazor.barcodegenerator.19.2.0.51.nupkg.sha512",
+        "syncfusion.blazor.barcodegenerator.nuspec"
+      ]
+    },
+    "Syncfusion.Blazor.BulletChart/19.2.0.51": {
+      "sha512": "jw/beKJYS7GEUcx2uLQvvrdqs7Rq+Rlg8YD1n12eIg3ax1cimiI0Aj3vMdS0XKhIAJzWPiUs+vRCL26YD286tQ==",
+      "type": "package",
+      "path": "syncfusion.blazor.bulletchart/19.2.0.51",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "build/Syncfusion.Blazor.BulletChart.props",
+        "buildMultiTargeting/Syncfusion.Blazor.BulletChart.props",
+        "buildTransitive/Syncfusion.Blazor.BulletChart.props",
+        "lib/net5.0/Syncfusion.Blazor.BulletChart.dll",
+        "lib/netstandard2.1/Syncfusion.Blazor.BulletChart.dll",
+        "staticwebassets/scripts/sf-bullet-chart-db3fc5.min.js",
+        "syncfusion.blazor.bulletchart.19.2.0.51.nupkg.sha512",
+        "syncfusion.blazor.bulletchart.nuspec"
+      ]
+    },
+    "Syncfusion.Blazor.Buttons/19.2.0.51": {
+      "sha512": "oiE4xBNFj5a/yt4lECeIUrselmUWvC0Ok7BN1qDmqBb3ZbzgOBxuQfipvDuk629OvgXUyHgSOvGMIioX7Fr3tQ==",
+      "type": "package",
+      "path": "syncfusion.blazor.buttons/19.2.0.51",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "build/Syncfusion.Blazor.Buttons.props",
+        "buildMultiTargeting/Syncfusion.Blazor.Buttons.props",
+        "buildTransitive/Syncfusion.Blazor.Buttons.props",
+        "lib/net5.0/Syncfusion.Blazor.Buttons.dll",
+        "lib/netstandard2.1/Syncfusion.Blazor.Buttons.dll",
+        "staticwebassets/scripts/checkbox-db3fc5.min.js",
+        "staticwebassets/scripts/radiobutton-db3fc5.min.js",
+        "staticwebassets/scripts/switch-db3fc5.min.js",
+        "syncfusion.blazor.buttons.19.2.0.51.nupkg.sha512",
+        "syncfusion.blazor.buttons.nuspec"
+      ]
+    },
+    "Syncfusion.Blazor.Calendars/19.2.0.51": {
+      "sha512": "EKVk8pVGR6UhE/TOHix1tKOIBQ4H+SI+eyzTvmI+goP6NjIUst40P9jHmH5IarAQAYYzbB1bVLo5Fz3tbZ7sug==",
+      "type": "package",
+      "path": "syncfusion.blazor.calendars/19.2.0.51",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "build/Syncfusion.Blazor.Calendars.props",
+        "buildMultiTargeting/Syncfusion.Blazor.Calendars.props",
+        "buildTransitive/Syncfusion.Blazor.Calendars.props",
+        "lib/net5.0/Syncfusion.Blazor.Calendars.dll",
+        "lib/netstandard2.1/Syncfusion.Blazor.Calendars.dll",
+        "staticwebassets/scripts/calendar-db3fc5.min.js",
+        "staticwebassets/scripts/datepicker-db3fc5.min.js",
+        "staticwebassets/scripts/daterangepicker-db3fc5.min.js",
+        "staticwebassets/scripts/datetimepicker-db3fc5.min.js",
+        "staticwebassets/scripts/sf-calendarbase-db3fc5.min.js",
+        "staticwebassets/scripts/sf-datepicker-db3fc5.min.js",
+        "staticwebassets/scripts/sf-daterangepicker-db3fc5.min.js",
+        "staticwebassets/scripts/sf-timepicker-db3fc5.min.js",
+        "staticwebassets/scripts/timepicker-db3fc5.min.js",
+        "syncfusion.blazor.calendars.19.2.0.51.nupkg.sha512",
+        "syncfusion.blazor.calendars.nuspec"
+      ]
+    },
+    "Syncfusion.Blazor.Cards/19.2.0.51": {
+      "sha512": "txfs0z2U85iOspIkxVnhX8qrE8H9jjTGt1UrrF4sEDBU0bxHhwuzzfh3Lq1z2IT8GxIH+1aO51ItxZZLMMdwEw==",
+      "type": "package",
+      "path": "syncfusion.blazor.cards/19.2.0.51",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net5.0/Syncfusion.Blazor.Cards.dll",
+        "lib/netstandard2.1/Syncfusion.Blazor.Cards.dll",
+        "syncfusion.blazor.cards.19.2.0.51.nupkg.sha512",
+        "syncfusion.blazor.cards.nuspec"
+      ]
+    },
+    "Syncfusion.Blazor.Charts/19.2.0.51": {
+      "sha512": "jg+2gFXzpyBqrDob+47aX4N3csaxZUdzWkNAXsbWKHz0+DmRkpXsjG0/at3um9HwH75dDaxYCcgmwgl9KapdUA==",
+      "type": "package",
+      "path": "syncfusion.blazor.charts/19.2.0.51",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "build/Syncfusion.Blazor.Charts.props",
+        "buildMultiTargeting/Syncfusion.Blazor.Charts.props",
+        "buildTransitive/Syncfusion.Blazor.Charts.props",
+        "lib/net5.0/Syncfusion.Blazor.Charts.dll",
+        "lib/netstandard2.1/Syncfusion.Blazor.Charts.dll",
+        "staticwebassets/scripts/chartsbase-db3fc5.min.js",
+        "staticwebassets/scripts/sf-accumulation-chart-db3fc5.min.js",
+        "staticwebassets/scripts/sf-chart-db3fc5.min.js",
+        "syncfusion.blazor.charts.19.2.0.51.nupkg.sha512",
+        "syncfusion.blazor.charts.nuspec"
+      ]
+    },
+    "Syncfusion.Blazor.CircularGauge/19.2.0.51": {
+      "sha512": "TRr1I9iFgB8ZXygZjZloufxt5xM7eLYotr679SZBuk2A9jAyGlhhctcvpmUFunXjU5Sgbnj6mVmreLecQYM6zQ==",
+      "type": "package",
+      "path": "syncfusion.blazor.circulargauge/19.2.0.51",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "build/Syncfusion.Blazor.CircularGauge.props",
+        "buildMultiTargeting/Syncfusion.Blazor.CircularGauge.props",
+        "buildTransitive/Syncfusion.Blazor.CircularGauge.props",
+        "lib/net5.0/Syncfusion.Blazor.CircularGauge.dll",
+        "lib/netstandard2.1/Syncfusion.Blazor.CircularGauge.dll",
+        "staticwebassets/scripts/sf-circulargauge-db3fc5.min.js",
+        "syncfusion.blazor.circulargauge.19.2.0.51.nupkg.sha512",
+        "syncfusion.blazor.circulargauge.nuspec"
+      ]
+    },
+    "Syncfusion.Blazor.Core/19.2.0.51": {
+      "sha512": "G3McJ5tn9V9TxRo6w1LvVdI6OjwDsrlhsvlJEiSnLOecFJX8U0sa4NDeg2mUsULBKCvh4rvo1V3gWFLXwgFr8Q==",
+      "type": "package",
+      "path": "syncfusion.blazor.core/19.2.0.51",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "build/Syncfusion.Blazor.Core.props",
+        "buildMultiTargeting/Syncfusion.Blazor.Core.props",
+        "buildTransitive/Syncfusion.Blazor.Core.props",
+        "lib/net5.0/Syncfusion.Blazor.Core.dll",
+        "lib/netstandard2.1/Syncfusion.Blazor.Core.dll",
+        "staticwebassets/scripts/compression-db3fc5.min.js",
+        "staticwebassets/scripts/excelexport-db3fc5.min.js",
+        "staticwebassets/scripts/fileutils-db3fc5.min.js",
+        "staticwebassets/scripts/pdfexport-db3fc5.min.js",
+        "staticwebassets/scripts/popup-db3fc5.min.js",
+        "staticwebassets/scripts/popupsbase-db3fc5.min.js",
+        "staticwebassets/scripts/sf-import-db3fc5.min.js",
+        "staticwebassets/scripts/sf-import-ie-db3fc5.min.js",
+        "staticwebassets/scripts/sf-svg-export-db3fc5.min.js",
+        "staticwebassets/scripts/svgbase-db3fc5.min.js",
+        "staticwebassets/scripts/syncfusion-blazor-db3fc5.min.js",
+        "staticwebassets/scripts/syncfusion-blazor-extended-db3fc5.min.js",
+        "syncfusion.blazor.core.19.2.0.51.nupkg.sha512",
+        "syncfusion.blazor.core.nuspec"
+      ]
+    },
+    "Syncfusion.Blazor.Data/19.2.0.51": {
+      "sha512": "1ltex9DEhDs2uT3SB/WCGpDNsWG0yxko2ttdVbI3/SGIR6CDVqhI2GwnCS70E56Ec3nYAcfkvaj6V1Pgtpr+Dw==",
+      "type": "package",
+      "path": "syncfusion.blazor.data/19.2.0.51",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "build/Syncfusion.Blazor.Data.props",
+        "buildMultiTargeting/Syncfusion.Blazor.Data.props",
+        "buildTransitive/Syncfusion.Blazor.Data.props",
+        "lib/net5.0/Syncfusion.Blazor.Data.dll",
+        "lib/netstandard2.1/Syncfusion.Blazor.Data.dll",
+        "staticwebassets/scripts/data-db3fc5.min.js",
+        "syncfusion.blazor.data.19.2.0.51.nupkg.sha512",
+        "syncfusion.blazor.data.nuspec"
+      ]
+    },
+    "Syncfusion.Blazor.DataVizCommon/19.2.0.51": {
+      "sha512": "MsEZaGdUqjIxUvmtAT3Wa8GEpHPEA98oNPNi23eHH87CyTma7nONUTTi7c3hg6M6x7QIbx/mkz17awBoUMv1JA==",
+      "type": "package",
+      "path": "syncfusion.blazor.datavizcommon/19.2.0.51",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net5.0/Syncfusion.Blazor.DataVizCommon.dll",
+        "lib/netstandard2.1/Syncfusion.Blazor.DataVizCommon.dll",
+        "syncfusion.blazor.datavizcommon.19.2.0.51.nupkg.sha512",
+        "syncfusion.blazor.datavizcommon.nuspec"
+      ]
+    },
+    "Syncfusion.Blazor.Diagram/19.2.0.51": {
+      "sha512": "w8Dj0BP6IhSkBcvrCFm7QJOe0EkWa6KxBbxAgDnAWrKDGaa8r5WLNSwPsmDNbOpwhaYo7BB8Rr0R0dijvUDnAQ==",
+      "type": "package",
+      "path": "syncfusion.blazor.diagram/19.2.0.51",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "build/Syncfusion.Blazor.Diagram.props",
+        "buildMultiTargeting/Syncfusion.Blazor.Diagram.props",
+        "buildTransitive/Syncfusion.Blazor.Diagram.props",
+        "lib/net5.0/Syncfusion.Blazor.Diagram.dll",
+        "lib/netstandard2.1/Syncfusion.Blazor.Diagram.dll",
+        "staticwebassets/scripts/sf-diagramcomponent-db3fc5.min.js",
+        "syncfusion.blazor.diagram.19.2.0.51.nupkg.sha512",
+        "syncfusion.blazor.diagram.nuspec"
+      ]
+    },
+    "Syncfusion.Blazor.Diagrams/19.2.0.51": {
+      "sha512": "2gNN0tRknNxHYQ0a8v78Jkgt4QWIvCj+zFl8u4B70+W1z1wtKXc9n7Ur3bXdoxRAIV5IJBRGSG83n68dY3cwyw==",
+      "type": "package",
+      "path": "syncfusion.blazor.diagrams/19.2.0.51",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "build/Syncfusion.Blazor.Diagrams.props",
+        "buildMultiTargeting/Syncfusion.Blazor.Diagrams.props",
+        "buildTransitive/Syncfusion.Blazor.Diagrams.props",
+        "lib/net5.0/Syncfusion.Blazor.Diagrams.dll",
+        "lib/netstandard2.1/Syncfusion.Blazor.Diagrams.dll",
+        "staticwebassets/scripts/diagrams-db3fc5.min.js",
+        "syncfusion.blazor.diagrams.19.2.0.51.nupkg.sha512",
+        "syncfusion.blazor.diagrams.nuspec"
+      ]
+    },
+    "Syncfusion.Blazor.DropDowns/19.2.0.51": {
+      "sha512": "bXA4Ndkp6KvtLwyB9ViyMplIDkfpAdDwx/qxEz1exl7EOEBfLzM1jmtQSIfW40tKxJ0bNHS7LyGWRUEmm+1NpA==",
+      "type": "package",
+      "path": "syncfusion.blazor.dropdowns/19.2.0.51",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "build/Syncfusion.Blazor.DropDowns.props",
+        "buildMultiTargeting/Syncfusion.Blazor.DropDowns.props",
+        "buildTransitive/Syncfusion.Blazor.DropDowns.props",
+        "lib/net5.0/Syncfusion.Blazor.DropDowns.dll",
+        "lib/netstandard2.1/Syncfusion.Blazor.DropDowns.dll",
+        "staticwebassets/scripts/combobox-db3fc5.min.js",
+        "staticwebassets/scripts/dropdownlist-db3fc5.min.js",
+        "staticwebassets/scripts/dropdownsbase-db3fc5.min.js",
+        "staticwebassets/scripts/listbox-db3fc5.min.js",
+        "staticwebassets/scripts/sf-dropdownlist-db3fc5.min.js",
+        "staticwebassets/scripts/sf-listbox-db3fc5.min.js",
+        "staticwebassets/scripts/sf-multiselect-db3fc5.min.js",
+        "staticwebassets/scripts/sortable-db3fc5.min.js",
+        "syncfusion.blazor.dropdowns.19.2.0.51.nupkg.sha512",
+        "syncfusion.blazor.dropdowns.nuspec"
+      ]
+    },
+    "Syncfusion.Blazor.FileManager/19.2.0.51": {
+      "sha512": "tJhjC8ibaj0HvV7dtx8pGQF1QBDOo+jgcNvViMafIDNMZ80SW4OyH0HQuHSEMN4nUZmOkENl5wok/YKNPC8Syg==",
+      "type": "package",
+      "path": "syncfusion.blazor.filemanager/19.2.0.51",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "build/Syncfusion.Blazor.FileManager.props",
+        "buildMultiTargeting/Syncfusion.Blazor.FileManager.props",
+        "buildTransitive/Syncfusion.Blazor.FileManager.props",
+        "lib/net5.0/Syncfusion.Blazor.FileManager.dll",
+        "lib/netstandard2.1/Syncfusion.Blazor.FileManager.dll",
+        "staticwebassets/scripts/sf-filemanager-db3fc5.min.js",
+        "syncfusion.blazor.filemanager.19.2.0.51.nupkg.sha512",
+        "syncfusion.blazor.filemanager.nuspec"
+      ]
+    },
+    "Syncfusion.Blazor.Gantt/19.2.0.51": {
+      "sha512": "EUTrBDN9fJ+UZwIesDRFWe26dm4uRczVa/Pk/MkY+toMBSLZBqSpy3O+KS81k1+aq3C8RPrQlT3YO0nLVTrnug==",
+      "type": "package",
+      "path": "syncfusion.blazor.gantt/19.2.0.51",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "build/Syncfusion.Blazor.Gantt.props",
+        "buildMultiTargeting/Syncfusion.Blazor.Gantt.props",
+        "buildTransitive/Syncfusion.Blazor.Gantt.props",
+        "lib/net5.0/Syncfusion.Blazor.Gantt.dll",
+        "lib/netstandard2.1/Syncfusion.Blazor.Gantt.dll",
+        "staticwebassets/scripts/sf-gantt-db3fc5.min.js",
+        "syncfusion.blazor.gantt.19.2.0.51.nupkg.sha512",
+        "syncfusion.blazor.gantt.nuspec"
+      ]
+    },
+    "Syncfusion.Blazor.Grid/19.2.0.51": {
+      "sha512": "Artiu/vnzo05y2WMIUo0aok+hx0ZHoUIeGGXUqVdhGJBjHhaR3uOQdtbNFPCEwWlqivxXDTZK25xbAPyxk9qjQ==",
+      "type": "package",
+      "path": "syncfusion.blazor.grid/19.2.0.51",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "build/Syncfusion.Blazor.Grid.props",
+        "buildMultiTargeting/Syncfusion.Blazor.Grid.props",
+        "buildTransitive/Syncfusion.Blazor.Grid.props",
+        "lib/net5.0/Syncfusion.Blazor.Grids.dll",
+        "lib/netstandard2.1/Syncfusion.Blazor.Grids.dll",
+        "staticwebassets/scripts/sf-grid-db3fc5.min.js",
+        "syncfusion.blazor.grid.19.2.0.51.nupkg.sha512",
+        "syncfusion.blazor.grid.nuspec"
+      ]
+    },
+    "Syncfusion.Blazor.HeatMap/19.2.0.51": {
+      "sha512": "MfI78nRcyk66aQ0XAG6U3w/0Siea6iECJQHujNeoV9mgm5sK+DXcUswO10r6SC2cqbHKxdxTgPgLaWpWhd5mLg==",
+      "type": "package",
+      "path": "syncfusion.blazor.heatmap/19.2.0.51",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "build/Syncfusion.Blazor.HeatMap.props",
+        "buildMultiTargeting/Syncfusion.Blazor.HeatMap.props",
+        "buildTransitive/Syncfusion.Blazor.HeatMap.props",
+        "lib/net5.0/Syncfusion.Blazor.HeatMap.dll",
+        "lib/netstandard2.1/Syncfusion.Blazor.HeatMap.dll",
+        "staticwebassets/scripts/sf-heatmap-db3fc5.min.js",
+        "syncfusion.blazor.heatmap.19.2.0.51.nupkg.sha512",
+        "syncfusion.blazor.heatmap.nuspec"
+      ]
+    },
+    "Syncfusion.Blazor.InPlaceEditor/19.2.0.51": {
+      "sha512": "xV4glL+/jcnv8DKyxJJOcZRxtZzb4LuKQvkb29CyfxtYGI2S1RKVQGOFemCcxmasI7KAL92YUESkmr1g+mGaKQ==",
+      "type": "package",
+      "path": "syncfusion.blazor.inplaceeditor/19.2.0.51",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "build/Syncfusion.Blazor.InPlaceEditor.props",
+        "buildMultiTargeting/Syncfusion.Blazor.InPlaceEditor.props",
+        "buildTransitive/Syncfusion.Blazor.InPlaceEditor.props",
+        "lib/net5.0/Syncfusion.Blazor.InPlaceEditor.dll",
+        "lib/netstandard2.1/Syncfusion.Blazor.InPlaceEditor.dll",
+        "staticwebassets/scripts/sf-inplaceeditor-db3fc5.min.js",
+        "syncfusion.blazor.inplaceeditor.19.2.0.51.nupkg.sha512",
+        "syncfusion.blazor.inplaceeditor.nuspec"
+      ]
+    },
+    "Syncfusion.Blazor.Inputs/19.2.0.51": {
+      "sha512": "5ngIaWraWafZrHYB70SQIzeC5FY8XtbYzmOGJR4gMQSeamqDkIr9y5RvjvRyJXtTpJyvXYr7k6eI+oKNgQOKqg==",
+      "type": "package",
+      "path": "syncfusion.blazor.inputs/19.2.0.51",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "build/Syncfusion.Blazor.Inputs.props",
+        "buildMultiTargeting/Syncfusion.Blazor.Inputs.props",
+        "buildTransitive/Syncfusion.Blazor.Inputs.props",
+        "lib/net5.0/Syncfusion.Blazor.Inputs.dll",
+        "lib/netstandard2.1/Syncfusion.Blazor.Inputs.dll",
+        "staticwebassets/scripts/colorpicker-db3fc5.min.js",
+        "staticwebassets/scripts/numerictextbox-db3fc5.min.js",
+        "staticwebassets/scripts/sf-colorpicker-db3fc5.min.js",
+        "staticwebassets/scripts/sf-maskedtextbox-db3fc5.min.js",
+        "staticwebassets/scripts/sf-numerictextbox-db3fc5.min.js",
+        "staticwebassets/scripts/sf-slider-db3fc5.min.js",
+        "staticwebassets/scripts/sf-textbox-db3fc5.min.js",
+        "staticwebassets/scripts/sf-uploader-db3fc5.min.js",
+        "staticwebassets/scripts/uploader-db3fc5.min.js",
+        "syncfusion.blazor.inputs.19.2.0.51.nupkg.sha512",
+        "syncfusion.blazor.inputs.nuspec"
+      ]
+    },
+    "Syncfusion.Blazor.Kanban/19.2.0.51": {
+      "sha512": "Eethn57uDUuMO2zI77Q1Gw+Ve6ZoBtmyCeGGsbrRQZUv6dMEBE6AN1vI6uT0Gr2Rv2FqJxVy1ia/X0TDywfjUw==",
+      "type": "package",
+      "path": "syncfusion.blazor.kanban/19.2.0.51",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "build/Syncfusion.Blazor.Kanban.props",
+        "buildMultiTargeting/Syncfusion.Blazor.Kanban.props",
+        "buildTransitive/Syncfusion.Blazor.Kanban.props",
+        "lib/net5.0/Syncfusion.Blazor.Kanban.dll",
+        "lib/netstandard2.1/Syncfusion.Blazor.Kanban.dll",
+        "staticwebassets/scripts/sf-kanban-db3fc5.min.js",
+        "syncfusion.blazor.kanban.19.2.0.51.nupkg.sha512",
+        "syncfusion.blazor.kanban.nuspec"
+      ]
+    },
+    "Syncfusion.Blazor.Layouts/19.2.0.51": {
+      "sha512": "vKOO5SJaz2x5T9sl2M1MAktJhIGcR3hCdM7kV+xwP8eD0f6DpATrMMUtrJuh68LS0KoBcS/uXO16XRlkP1k0XQ==",
+      "type": "package",
+      "path": "syncfusion.blazor.layouts/19.2.0.51",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "build/Syncfusion.Blazor.Layouts.props",
+        "buildMultiTargeting/Syncfusion.Blazor.Layouts.props",
+        "buildTransitive/Syncfusion.Blazor.Layouts.props",
+        "lib/net5.0/Syncfusion.Blazor.Layouts.dll",
+        "lib/netstandard2.1/Syncfusion.Blazor.Layouts.dll",
+        "staticwebassets/scripts/sf-dashboard-layout-db3fc5.min.js",
+        "staticwebassets/scripts/sf-splitter-db3fc5.min.js",
+        "syncfusion.blazor.layouts.19.2.0.51.nupkg.sha512",
+        "syncfusion.blazor.layouts.nuspec"
+      ]
+    },
+    "Syncfusion.Blazor.LinearGauge/19.2.0.51": {
+      "sha512": "qx5bblUmzaQNBZDrWJZKebwgcraIXiDlswwSSr81zwxsj5byq90zwcNQJ/DFc3wa8lNnI0LDtc8HA456/EJxHg==",
+      "type": "package",
+      "path": "syncfusion.blazor.lineargauge/19.2.0.51",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "build/Syncfusion.Blazor.LinearGauge.props",
+        "buildMultiTargeting/Syncfusion.Blazor.LinearGauge.props",
+        "buildTransitive/Syncfusion.Blazor.LinearGauge.props",
+        "lib/net5.0/Syncfusion.Blazor.LinearGauge.dll",
+        "lib/netstandard2.1/Syncfusion.Blazor.LinearGauge.dll",
+        "staticwebassets/scripts/sf-lineargauge-db3fc5.min.js",
+        "syncfusion.blazor.lineargauge.19.2.0.51.nupkg.sha512",
+        "syncfusion.blazor.lineargauge.nuspec"
+      ]
+    },
+    "Syncfusion.Blazor.Lists/19.2.0.51": {
+      "sha512": "VMt0mS9SkBvyT+w5bUB6JPTICfjU9FdV3H8sOsFUwJFC3E8VGzTQP2QMjRGuUiHwT8RuyoUVPFb5fcgT9dU3ow==",
+      "type": "package",
+      "path": "syncfusion.blazor.lists/19.2.0.51",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "build/Syncfusion.Blazor.Lists.props",
+        "buildMultiTargeting/Syncfusion.Blazor.Lists.props",
+        "buildTransitive/Syncfusion.Blazor.Lists.props",
+        "lib/net5.0/Syncfusion.Blazor.Lists.dll",
+        "lib/netstandard2.1/Syncfusion.Blazor.Lists.dll",
+        "staticwebassets/scripts/sf-listview-db3fc5.min.js",
+        "syncfusion.blazor.lists.19.2.0.51.nupkg.sha512",
+        "syncfusion.blazor.lists.nuspec"
+      ]
+    },
+    "Syncfusion.Blazor.Maps/19.2.0.51": {
+      "sha512": "Hw553Wo+TOsb4/kLCzscJnhu+toQZ4w1EFxkJEgx/pWk+3irIFNW/F9ROU0YPCOx9KC5KWxWt0F9oGxpzjNuTQ==",
+      "type": "package",
+      "path": "syncfusion.blazor.maps/19.2.0.51",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "build/Syncfusion.Blazor.Maps.props",
+        "buildMultiTargeting/Syncfusion.Blazor.Maps.props",
+        "buildTransitive/Syncfusion.Blazor.Maps.props",
+        "lib/net5.0/Syncfusion.Blazor.Maps.dll",
+        "lib/netstandard2.1/Syncfusion.Blazor.Maps.dll",
+        "staticwebassets/scripts/sf-maps-db3fc5.min.js",
+        "syncfusion.blazor.maps.19.2.0.51.nupkg.sha512",
+        "syncfusion.blazor.maps.nuspec"
+      ]
+    },
+    "Syncfusion.Blazor.Navigations/19.2.0.51": {
+      "sha512": "zYZkSrhI73AhebyiWkWpr3T5C6+lhYpyCZzbZEg796XhuAX/IedM0+DEWwEAVHlmpetE3dOW+duvW2CJsA/vVQ==",
+      "type": "package",
+      "path": "syncfusion.blazor.navigations/19.2.0.51",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "build/Syncfusion.Blazor.Navigations.props",
+        "buildMultiTargeting/Syncfusion.Blazor.Navigations.props",
+        "buildTransitive/Syncfusion.Blazor.Navigations.props",
+        "lib/net5.0/Syncfusion.Blazor.Navigations.dll",
+        "lib/netstandard2.1/Syncfusion.Blazor.Navigations.dll",
+        "staticwebassets/scripts/menu-db3fc5.min.js",
+        "staticwebassets/scripts/navigationsbase-db3fc5.min.js",
+        "staticwebassets/scripts/sf-accordion-db3fc5.min.js",
+        "staticwebassets/scripts/sf-contextmenu-db3fc5.min.js",
+        "staticwebassets/scripts/sf-menu-db3fc5.min.js",
+        "staticwebassets/scripts/sf-sidebar-db3fc5.min.js",
+        "staticwebassets/scripts/sf-tab-db3fc5.min.js",
+        "staticwebassets/scripts/sf-toolbar-db3fc5.min.js",
+        "staticwebassets/scripts/sf-treeview-db3fc5.min.js",
+        "staticwebassets/scripts/tab-db3fc5.min.js",
+        "staticwebassets/scripts/toolbar-db3fc5.min.js",
+        "syncfusion.blazor.navigations.19.2.0.51.nupkg.sha512",
+        "syncfusion.blazor.navigations.nuspec"
+      ]
+    },
+    "Syncfusion.Blazor.Notifications/19.2.0.51": {
+      "sha512": "x6/VEm4Uf2D8XUpNMSJwbqTJWPQiz9w0OTRqXGdeVv1wYi1bOhEIoi3Kfoiigi1U7PUTm4wDeCSdUl/d5VfBWA==",
+      "type": "package",
+      "path": "syncfusion.blazor.notifications/19.2.0.51",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "build/Syncfusion.Blazor.Notifications.props",
+        "buildMultiTargeting/Syncfusion.Blazor.Notifications.props",
+        "buildTransitive/Syncfusion.Blazor.Notifications.props",
+        "lib/net5.0/Syncfusion.Blazor.Notifications.dll",
+        "lib/netstandard2.1/Syncfusion.Blazor.Notifications.dll",
+        "staticwebassets/scripts/sf-toast-db3fc5.min.js",
+        "syncfusion.blazor.notifications.19.2.0.51.nupkg.sha512",
+        "syncfusion.blazor.notifications.nuspec"
+      ]
+    },
+    "Syncfusion.Blazor.PdfViewer/19.2.0.51": {
+      "sha512": "KaojzcW4znvXtApYBGi0oygmoItvE6fSnBkUfVBAFmGZ21bgGjvOvy8thDkY4kbTISvjqmaVrCD6kJ27F3B/Mg==",
+      "type": "package",
+      "path": "syncfusion.blazor.pdfviewer/19.2.0.51",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "build/Syncfusion.Blazor.PdfViewer.props",
+        "buildMultiTargeting/Syncfusion.Blazor.PdfViewer.props",
+        "buildTransitive/Syncfusion.Blazor.PdfViewer.props",
+        "lib/net5.0/Syncfusion.Blazor.PdfViewer.dll",
+        "lib/netstandard2.1/Syncfusion.Blazor.PdfViewer.dll",
+        "staticwebassets/scripts/accordion-db3fc5.min.js",
+        "staticwebassets/scripts/button-db3fc5.min.js",
+        "staticwebassets/scripts/buttonsbase-db3fc5.min.js",
+        "staticwebassets/scripts/contextmenu-db3fc5.min.js",
+        "staticwebassets/scripts/dialog-db3fc5.min.js",
+        "staticwebassets/scripts/drawings-db3fc5.min.js",
+        "staticwebassets/scripts/inplaceeditor-db3fc5.min.js",
+        "staticwebassets/scripts/inputsbase-db3fc5.min.js",
+        "staticwebassets/scripts/listsbase-db3fc5.min.js",
+        "staticwebassets/scripts/listview-db3fc5.min.js",
+        "staticwebassets/scripts/pdfviewer-db3fc5.min.js",
+        "staticwebassets/scripts/textbox-db3fc5.min.js",
+        "staticwebassets/scripts/toast-db3fc5.min.js",
+        "staticwebassets/scripts/tooltip-db3fc5.min.js",
+        "syncfusion.blazor.pdfviewer.19.2.0.51.nupkg.sha512",
+        "syncfusion.blazor.pdfviewer.nuspec"
+      ]
+    },
+    "Syncfusion.Blazor.PivotTable/19.2.0.51": {
+      "sha512": "nPOm4rLJARbDKehmJlfTkUOnLe2JIg7OBvpH/p3XWweeBNVQaBPsi5sNb/FIsN7WiC4IJl/NOAie77e4ZpYoiQ==",
+      "type": "package",
+      "path": "syncfusion.blazor.pivottable/19.2.0.51",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "build/Syncfusion.Blazor.PivotTable.props",
+        "buildMultiTargeting/Syncfusion.Blazor.PivotTable.props",
+        "buildTransitive/Syncfusion.Blazor.PivotTable.props",
+        "lib/net5.0/Syncfusion.Blazor.PivotView.dll",
+        "lib/netstandard2.1/Syncfusion.Blazor.PivotView.dll",
+        "staticwebassets/scripts/sf-pivotview-db3fc5.min.js",
+        "syncfusion.blazor.pivottable.19.2.0.51.nupkg.sha512",
+        "syncfusion.blazor.pivottable.nuspec"
+      ]
+    },
+    "Syncfusion.Blazor.Popups/19.2.0.51": {
+      "sha512": "dwbXp+Jql/RUmFJoa3Ban8MhYaMQiaOBtBo2wh+pKI/PyCbA3RgITc3zTj2ce1Ky/J65pJD+fKe7vuO6AZgsjw==",
+      "type": "package",
+      "path": "syncfusion.blazor.popups/19.2.0.51",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "build/Syncfusion.Blazor.Popups.props",
+        "buildMultiTargeting/Syncfusion.Blazor.Popups.props",
+        "buildTransitive/Syncfusion.Blazor.Popups.props",
+        "lib/net5.0/Syncfusion.Blazor.Popups.dll",
+        "lib/netstandard2.1/Syncfusion.Blazor.Popups.dll",
+        "staticwebassets/scripts/sf-dialog-db3fc5.min.js",
+        "staticwebassets/scripts/sf-tooltip-db3fc5.min.js",
+        "syncfusion.blazor.popups.19.2.0.51.nupkg.sha512",
+        "syncfusion.blazor.popups.nuspec"
+      ]
+    },
+    "Syncfusion.Blazor.ProgressBar/19.2.0.51": {
+      "sha512": "g+0W+cjhr7XJ+KWn/DZ7A3qOpruD87bWik8eMZmjRF+UgVGycX9vl662VN5YPXbaMVYfLu84JAuFe7YXmSm5yg==",
+      "type": "package",
+      "path": "syncfusion.blazor.progressbar/19.2.0.51",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "build/Syncfusion.Blazor.ProgressBar.props",
+        "buildMultiTargeting/Syncfusion.Blazor.ProgressBar.props",
+        "buildTransitive/Syncfusion.Blazor.ProgressBar.props",
+        "lib/net5.0/Syncfusion.Blazor.ProgressBar.dll",
+        "lib/netstandard2.1/Syncfusion.Blazor.ProgressBar.dll",
+        "staticwebassets/scripts/sf-progressbar-db3fc5.min.js",
+        "syncfusion.blazor.progressbar.19.2.0.51.nupkg.sha512",
+        "syncfusion.blazor.progressbar.nuspec"
+      ]
+    },
+    "Syncfusion.Blazor.QueryBuilder/19.2.0.51": {
+      "sha512": "K8TAYXvHdfN9nfnr0vTBTSQq0G9OWpVc4vmMKaSX4xEeDrdBnQSbuMknEIbtpxcRZRffNFyZl5+gsDexiu87jw==",
+      "type": "package",
+      "path": "syncfusion.blazor.querybuilder/19.2.0.51",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "build/Syncfusion.Blazor.QueryBuilder.props",
+        "buildMultiTargeting/Syncfusion.Blazor.QueryBuilder.props",
+        "buildTransitive/Syncfusion.Blazor.QueryBuilder.props",
+        "lib/net5.0/Syncfusion.Blazor.QueryBuilder.dll",
+        "lib/netstandard2.1/Syncfusion.Blazor.QueryBuilder.dll",
+        "staticwebassets/scripts/querybuilder-db3fc5.min.js",
+        "syncfusion.blazor.querybuilder.19.2.0.51.nupkg.sha512",
+        "syncfusion.blazor.querybuilder.nuspec"
+      ]
+    },
+    "Syncfusion.Blazor.RangeNavigator/19.2.0.51": {
+      "sha512": "MdQetJ5uPw7PSBjDBL0rjQc0BgRl59dy6xiSGx7TtM94a6QrgtvbM72h2rAUbW21uEYVoc61K+IohVc0KGupKQ==",
+      "type": "package",
+      "path": "syncfusion.blazor.rangenavigator/19.2.0.51",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "build/Syncfusion.Blazor.RangeNavigator.props",
+        "buildMultiTargeting/Syncfusion.Blazor.RangeNavigator.props",
+        "buildTransitive/Syncfusion.Blazor.RangeNavigator.props",
+        "lib/net5.0/Syncfusion.Blazor.RangeNavigator.dll",
+        "lib/netstandard2.1/Syncfusion.Blazor.RangeNavigator.dll",
+        "staticwebassets/scripts/sf-range-navigator-db3fc5.min.js",
+        "syncfusion.blazor.rangenavigator.19.2.0.51.nupkg.sha512",
+        "syncfusion.blazor.rangenavigator.nuspec"
+      ]
+    },
+    "Syncfusion.Blazor.RichTextEditor/19.2.0.51": {
+      "sha512": "LL+J9n5kGpIN7mJpc8ZJ+HhqU/vKP4wkL07SKpA/3N3KFkaWjqWcd1ASgeTrQTwcXyMnjnoVC2UAb2bsrBKNTg==",
+      "type": "package",
+      "path": "syncfusion.blazor.richtexteditor/19.2.0.51",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "build/Syncfusion.Blazor.RichTextEditor.props",
+        "buildMultiTargeting/Syncfusion.Blazor.RichTextEditor.props",
+        "buildTransitive/Syncfusion.Blazor.RichTextEditor.props",
+        "lib/net5.0/Syncfusion.Blazor.RichTextEditor.dll",
+        "lib/netstandard2.1/Syncfusion.Blazor.RichTextEditor.dll",
+        "staticwebassets/scripts/sf-richtexteditor-db3fc5.min.js",
+        "syncfusion.blazor.richtexteditor.19.2.0.51.nupkg.sha512",
+        "syncfusion.blazor.richtexteditor.nuspec"
+      ]
+    },
+    "Syncfusion.Blazor.Schedule/19.2.0.51": {
+      "sha512": "lqrcTcmnBcC2WgF8q9VH1rq5iWTRQ8QcKSRDT9K67ysG0rg6vbsB1uYQZWdsAH1/4doWx2IsvEExA9I2DVBb+g==",
+      "type": "package",
+      "path": "syncfusion.blazor.schedule/19.2.0.51",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "build/Syncfusion.Blazor.Schedule.props",
+        "buildMultiTargeting/Syncfusion.Blazor.Schedule.props",
+        "buildTransitive/Syncfusion.Blazor.Schedule.props",
+        "lib/net5.0/Syncfusion.Blazor.Schedule.dll",
+        "lib/netstandard2.1/Syncfusion.Blazor.Schedule.dll",
+        "staticwebassets/scripts/sf-schedule-db3fc5.min.js",
+        "syncfusion.blazor.schedule.19.2.0.51.nupkg.sha512",
+        "syncfusion.blazor.schedule.nuspec"
+      ]
+    },
+    "Syncfusion.Blazor.SmithChart/19.2.0.51": {
+      "sha512": "VHgPbUk5CcEt/C0I+x1pMyPUC22FePrFmiWlVmQhgRs9mPVCGm2oKOO9sKlPBt2p0XAHwTOKuOgdZQtFvM9YPw==",
+      "type": "package",
+      "path": "syncfusion.blazor.smithchart/19.2.0.51",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "build/Syncfusion.Blazor.SmithChart.props",
+        "buildMultiTargeting/Syncfusion.Blazor.SmithChart.props",
+        "buildTransitive/Syncfusion.Blazor.SmithChart.props",
+        "lib/net5.0/Syncfusion.Blazor.SmithChart.dll",
+        "lib/netstandard2.1/Syncfusion.Blazor.SmithChart.dll",
+        "staticwebassets/scripts/sf-smith-chart-db3fc5.min.js",
+        "syncfusion.blazor.smithchart.19.2.0.51.nupkg.sha512",
+        "syncfusion.blazor.smithchart.nuspec"
+      ]
+    },
+    "Syncfusion.Blazor.Sparkline/19.2.0.51": {
+      "sha512": "iuDWoiSYv/PogBLOr4jktB4aHLrQ3uhRBds9xtqeCAESeI984jZ5bhwW3aN2ScRIffhhtqyYFG/ZK2IVOoA1Qg==",
+      "type": "package",
+      "path": "syncfusion.blazor.sparkline/19.2.0.51",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "build/Syncfusion.Blazor.Sparkline.props",
+        "buildMultiTargeting/Syncfusion.Blazor.Sparkline.props",
+        "buildTransitive/Syncfusion.Blazor.Sparkline.props",
+        "lib/net5.0/Syncfusion.Blazor.Sparkline.dll",
+        "lib/netstandard2.1/Syncfusion.Blazor.Sparkline.dll",
+        "staticwebassets/scripts/sf-sparkline-db3fc5.min.js",
+        "syncfusion.blazor.sparkline.19.2.0.51.nupkg.sha512",
+        "syncfusion.blazor.sparkline.nuspec"
+      ]
+    },
+    "Syncfusion.Blazor.Spinner/19.2.0.51": {
+      "sha512": "4a+XHmTY1oQ8wCWXJ2VM35DLdBcMVH/bUjxNrcHyisCuUYuNBlYALllzSbtFdqRerNeXTrMQ2wCnluJ3A0sH9A==",
+      "type": "package",
+      "path": "syncfusion.blazor.spinner/19.2.0.51",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "build/Syncfusion.Blazor.Spinner.props",
+        "buildMultiTargeting/Syncfusion.Blazor.Spinner.props",
+        "buildTransitive/Syncfusion.Blazor.Spinner.props",
+        "lib/net5.0/Syncfusion.Blazor.Spinner.dll",
+        "lib/netstandard2.1/Syncfusion.Blazor.Spinner.dll",
+        "staticwebassets/scripts/sf-spinner-db3fc5.min.js",
+        "staticwebassets/scripts/spinner-db3fc5.min.js",
+        "syncfusion.blazor.spinner.19.2.0.51.nupkg.sha512",
+        "syncfusion.blazor.spinner.nuspec"
+      ]
+    },
+    "Syncfusion.Blazor.SplitButtons/19.2.0.51": {
+      "sha512": "7uHheC6qA0pvA8YuPWr0m9WHH3FlQlfpIl5v7MZkHZFIvNX6ioyMGyMDjd1dVupz23/MVTjZtvqEj/vtcZ6oRQ==",
+      "type": "package",
+      "path": "syncfusion.blazor.splitbuttons/19.2.0.51",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "build/Syncfusion.Blazor.SplitButtons.props",
+        "buildMultiTargeting/Syncfusion.Blazor.SplitButtons.props",
+        "buildTransitive/Syncfusion.Blazor.SplitButtons.props",
+        "lib/net5.0/Syncfusion.Blazor.SplitButtons.dll",
+        "lib/netstandard2.1/Syncfusion.Blazor.SplitButtons.dll",
+        "staticwebassets/scripts/dropdownbutton-db3fc5.min.js",
+        "staticwebassets/scripts/progressbutton-db3fc5.min.js",
+        "staticwebassets/scripts/sf-drop-down-button-db3fc5.min.js",
+        "staticwebassets/scripts/splitbutton-db3fc5.min.js",
+        "staticwebassets/scripts/splitbuttonsbase-db3fc5.min.js",
+        "syncfusion.blazor.splitbuttons.19.2.0.51.nupkg.sha512",
+        "syncfusion.blazor.splitbuttons.nuspec"
+      ]
+    },
+    "Syncfusion.Blazor.StockChart/19.2.0.51": {
+      "sha512": "xJ8XJxRV27QviB0H6QMDaZMS5Gse3N1QajosdLREc6XS4HF8V0v4pk+vw0bI6AyFg4QGZZbf1klmILLURANTXQ==",
+      "type": "package",
+      "path": "syncfusion.blazor.stockchart/19.2.0.51",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "build/Syncfusion.Blazor.StockChart.props",
+        "buildMultiTargeting/Syncfusion.Blazor.StockChart.props",
+        "buildTransitive/Syncfusion.Blazor.StockChart.props",
+        "lib/net5.0/Syncfusion.Blazor.StockChart.dll",
+        "lib/netstandard2.1/Syncfusion.Blazor.StockChart.dll",
+        "staticwebassets/scripts/sf-stock-chart-db3fc5.min.js",
+        "syncfusion.blazor.stockchart.19.2.0.51.nupkg.sha512",
+        "syncfusion.blazor.stockchart.nuspec"
+      ]
+    },
+    "Syncfusion.Blazor.Themes/19.2.0.51": {
+      "sha512": "lZugMGHnnPefVctajRoSlJWbu1z8VYe0U5aMsleNZfM5aSEA0RwmqlpPPH3jHG6qEnoKwgoiMvv1VrEjeYAqbw==",
+      "type": "package",
+      "path": "syncfusion.blazor.themes/19.2.0.51",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "build/Syncfusion.Blazor.Themes.props",
+        "buildMultiTargeting/Syncfusion.Blazor.Themes.props",
+        "buildTransitive/Syncfusion.Blazor.Themes.props",
+        "lib/net5.0/Syncfusion.Blazor.Themes.dll",
+        "lib/netstandard2.1/Syncfusion.Blazor.Themes.dll",
+        "staticwebassets/bootstrap-dark.css",
+        "staticwebassets/bootstrap.css",
+        "staticwebassets/bootstrap4.css",
+        "staticwebassets/fabric-dark.css",
+        "staticwebassets/fabric.css",
+        "staticwebassets/highcontrast.css",
+        "staticwebassets/material-dark.css",
+        "staticwebassets/material.css",
+        "staticwebassets/tailwind-dark.css",
+        "staticwebassets/tailwind.css",
+        "syncfusion.blazor.themes.19.2.0.51.nupkg.sha512",
+        "syncfusion.blazor.themes.nuspec"
+      ]
+    },
+    "Syncfusion.Blazor.TreeGrid/19.2.0.51": {
+      "sha512": "t+n+7rhHjz4G/nj0BXnNi7HiHAmyEgEpjyCdVmD82xpja8TtzmYiv+oDKQKkrG9Q/YPc2E5GQ1bdckg8rXN5fw==",
+      "type": "package",
+      "path": "syncfusion.blazor.treegrid/19.2.0.51",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "build/Syncfusion.Blazor.TreeGrid.props",
+        "buildMultiTargeting/Syncfusion.Blazor.TreeGrid.props",
+        "buildTransitive/Syncfusion.Blazor.TreeGrid.props",
+        "lib/net5.0/Syncfusion.Blazor.TreeGrid.dll",
+        "lib/netstandard2.1/Syncfusion.Blazor.TreeGrid.dll",
+        "staticwebassets/scripts/sf-treegrid-db3fc5.min.js",
+        "syncfusion.blazor.treegrid.19.2.0.51.nupkg.sha512",
+        "syncfusion.blazor.treegrid.nuspec"
+      ]
+    },
+    "Syncfusion.Blazor.TreeMap/19.2.0.51": {
+      "sha512": "LyqIrApF0CGc6Gnma21MMD2lDTfElJMNHbARZtY80zLMx3t+mGSP0Al0nIOaZQCIIIk23ioxRXuT/TRzRZyGlA==",
+      "type": "package",
+      "path": "syncfusion.blazor.treemap/19.2.0.51",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "build/Syncfusion.Blazor.TreeMap.props",
+        "buildMultiTargeting/Syncfusion.Blazor.TreeMap.props",
+        "buildTransitive/Syncfusion.Blazor.TreeMap.props",
+        "lib/net5.0/Syncfusion.Blazor.TreeMap.dll",
+        "lib/netstandard2.1/Syncfusion.Blazor.TreeMap.dll",
+        "staticwebassets/scripts/sf-treemap-db3fc5.min.js",
+        "syncfusion.blazor.treemap.19.2.0.51.nupkg.sha512",
+        "syncfusion.blazor.treemap.nuspec"
+      ]
+    },
+    "Syncfusion.Blazor.WordProcessor/19.2.0.51": {
+      "sha512": "zYVrsZchhWbD4oh8NMbMR2du2duJWzTmUb+d/VrikoZnKIrSQbvqanMEaEtoF2VXAw+5keMqPv6HBx2EYsWOzA==",
+      "type": "package",
+      "path": "syncfusion.blazor.wordprocessor/19.2.0.51",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "build/Syncfusion.Blazor.WordProcessor.props",
+        "buildMultiTargeting/Syncfusion.Blazor.WordProcessor.props",
+        "buildTransitive/Syncfusion.Blazor.WordProcessor.props",
+        "lib/net5.0/Syncfusion.Blazor.DocumentEditor.dll",
+        "lib/net5.0/Syncfusion.Blazor.DocumentEditor.xml",
+        "lib/netstandard2.1/Syncfusion.Blazor.DocumentEditor.dll",
+        "lib/netstandard2.1/Syncfusion.Blazor.DocumentEditor.xml",
+        "staticwebassets/scripts/accumulationchart-db3fc5.min.js",
+        "staticwebassets/scripts/chart-db3fc5.min.js",
+        "staticwebassets/scripts/officechart-db3fc5.min.js",
+        "staticwebassets/scripts/sf-documenteditor-db3fc5.min.js",
+        "staticwebassets/scripts/sf-documenteditorcontainer-db3fc5.min.js",
+        "syncfusion.blazor.wordprocessor.19.2.0.51.nupkg.sha512",
+        "syncfusion.blazor.wordprocessor.nuspec"
+      ]
+    },
+    "Syncfusion.Compression.Net.Core/19.2.0.51": {
+      "sha512": "u6Mn7OqaNeRO5i1ZDv5mzhZR/fHVQvlRVWcjb5Rxd4ZQX0dc8pXlg7bTunVRgpRfgDST57WV0KgrZrBI+zQ6GQ==",
+      "type": "package",
+      "path": "syncfusion.compression.net.core/19.2.0.51",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard1.2/Syncfusion.Compression.Portable.dll",
+        "lib/netstandard1.2/Syncfusion.Compression.Portable.xml",
+        "lib/netstandard1.4/Syncfusion.Compression.Portable.dll",
+        "lib/netstandard1.4/Syncfusion.Compression.Portable.xml",
+        "lib/netstandard2.0/Syncfusion.Compression.Portable.dll",
+        "lib/netstandard2.0/Syncfusion.Compression.Portable.xml",
+        "syncfusion.compression.net.core.19.2.0.51.nupkg.sha512",
+        "syncfusion.compression.net.core.nuspec"
+      ]
+    },
+    "Syncfusion.DocIO.Net.Core/19.2.0.51": {
+      "sha512": "Lpkt49mdjOhSFXUry6Nh1WIUtAZdqHGtqC5SsSDZ6oPDPlluS/HPhAQ9T9RDK++ug+0BMVSnf6ly73cfPjpy6g==",
+      "type": "package",
+      "path": "syncfusion.docio.net.core/19.2.0.51",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard1.2/Syncfusion.DocIO.Portable.dll",
+        "lib/netstandard1.2/Syncfusion.DocIO.Portable.xml",
+        "lib/netstandard1.4/Syncfusion.DocIO.Portable.dll",
+        "lib/netstandard1.4/Syncfusion.DocIO.Portable.xml",
+        "lib/netstandard2.0/Syncfusion.DocIO.Portable.dll",
+        "lib/netstandard2.0/Syncfusion.DocIO.Portable.xml",
+        "syncfusion.docio.net.core.19.2.0.51.nupkg.sha512",
+        "syncfusion.docio.net.core.nuspec"
+      ]
+    },
+    "Syncfusion.DocIORenderer.Net.Core/19.2.0.51": {
+      "sha512": "zDkUqYBUO2GdV9boJUxg/oKQA1wnjCL+gVPjblj0zQphgmbqy74y2Y9y+C2i+FZ4X10I0HzoCIBxPjHdO5MgFQ==",
+      "type": "package",
+      "path": "syncfusion.dociorenderer.net.core/19.2.0.51",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard1.4/Syncfusion.DocIORenderer.Portable.dll",
+        "lib/netstandard1.4/Syncfusion.DocIORenderer.Portable.xml",
+        "lib/netstandard2.0/Syncfusion.DocIORenderer.Portable.dll",
+        "lib/netstandard2.0/Syncfusion.DocIORenderer.Portable.xml",
+        "syncfusion.dociorenderer.net.core.19.2.0.51.nupkg.sha512",
+        "syncfusion.dociorenderer.net.core.nuspec"
+      ]
+    },
+    "Syncfusion.ExcelExport.Net.Core/19.2.0.51": {
+      "sha512": "k72vdA41p7yMSyb7ZYXh61xe4mS2Hupi1DTX118jLdH6DLUKmjtdhrUehzuJB/T1bhmiDAWSxf/40el/qI/BWg==",
+      "type": "package",
+      "path": "syncfusion.excelexport.net.core/19.2.0.51",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net5.0/Syncfusion.ExcelExport.Net.dll",
+        "lib/net5.0/Syncfusion.ExcelExport.Net.xml",
+        "lib/netstandard2.0/Syncfusion.ExcelExport.Net.dll",
+        "lib/netstandard2.0/Syncfusion.ExcelExport.Net.xml",
+        "syncfusion.excelexport.net.core.19.2.0.51.nupkg.sha512",
+        "syncfusion.excelexport.net.core.nuspec"
+      ]
+    },
+    "Syncfusion.Licensing/19.2.0.51": {
+      "sha512": "eLgJ3ZHUKCHVi3/rRQ7BTMlJEk/UknRIIv6FsjbYt2kEaADvf50AFd1UDKerGWxaCnDgjIjWKFSzF7DA+sk1Qw==",
+      "type": "package",
+      "path": "syncfusion.licensing/19.2.0.51",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10.0/Syncfusion.Licensing.dll",
+        "lib/MonoAndroid90/Syncfusion.Licensing.dll",
+        "lib/Xamarin.Mac/Syncfusion.Licensing.dll",
+        "lib/Xamarin.iOS10/Syncfusion.Licensing.dll",
+        "lib/net20/Syncfusion.Licensing.dll",
+        "lib/net35/Syncfusion.Licensing.dll",
+        "lib/net40/Syncfusion.Licensing.dll",
+        "lib/net45/Syncfusion.Licensing.dll",
+        "lib/net451/Syncfusion.Licensing.dll",
+        "lib/net46/Syncfusion.Licensing.dll",
+        "lib/net5.0/Syncfusion.Licensing.dll",
+        "lib/netcoreapp3.1/Syncfusion.Licensing.dll",
+        "lib/netstandard1.0/Syncfusion.Licensing.dll",
+        "lib/netstandard1.2/Syncfusion.Licensing.dll",
+        "lib/netstandard1.4/Syncfusion.Licensing.dll",
+        "lib/netstandard2.0/Syncfusion.Licensing.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.Licensing.dll",
+        "lib/uap10.0/Syncfusion.Licensing.dll",
+        "syncfusion.licensing.19.2.0.51.nupkg.sha512",
+        "syncfusion.licensing.nuspec"
+      ]
+    },
+    "Syncfusion.OfficeChart.Net.Core/19.2.0.51": {
+      "sha512": "GPAIuDX1BHOEazd6xUEI2PllPBN/ql5UNFjVGkEVAaTjrw2XvTpd3KGdiIMCflhtSkDg0dhpbBhlHruVxpCL6g==",
+      "type": "package",
+      "path": "syncfusion.officechart.net.core/19.2.0.51",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard1.2/Syncfusion.OfficeChart.Portable.dll",
+        "lib/netstandard1.2/Syncfusion.OfficeChart.Portable.xml",
+        "lib/netstandard1.4/Syncfusion.OfficeChart.Portable.dll",
+        "lib/netstandard1.4/Syncfusion.OfficeChart.Portable.xml",
+        "lib/netstandard2.0/Syncfusion.OfficeChart.Portable.dll",
+        "lib/netstandard2.0/Syncfusion.OfficeChart.Portable.xml",
+        "syncfusion.officechart.net.core.19.2.0.51.nupkg.sha512",
+        "syncfusion.officechart.net.core.nuspec"
+      ]
+    },
+    "Syncfusion.Pdf.Net.Core/19.2.0.51": {
+      "sha512": "IOGPHTvMcvPqYXBBjIAjCvOxBg6TjcrMkq2KYV5escUY4pcffCXOYjcQTUF0xePY5bbiyJ78871ImnLhlKp9oQ==",
+      "type": "package",
+      "path": "syncfusion.pdf.net.core/19.2.0.51",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard1.2/Syncfusion.Pdf.Portable.dll",
+        "lib/netstandard1.2/Syncfusion.Pdf.Portable.xml",
+        "lib/netstandard1.4/Syncfusion.Pdf.Portable.dll",
+        "lib/netstandard1.4/Syncfusion.Pdf.Portable.xml",
+        "lib/netstandard2.0/Syncfusion.Pdf.Portable.dll",
+        "lib/netstandard2.0/Syncfusion.Pdf.Portable.xml",
+        "syncfusion.pdf.net.core.19.2.0.51.nupkg.sha512",
+        "syncfusion.pdf.net.core.nuspec"
+      ]
+    },
+    "Syncfusion.PdfExport.Net.Core/19.2.0.51": {
+      "sha512": "vWysaqn9lKRtOXvEVBfG1YUULUw6wDu5QenZX2ELAc1UG+4+M/fSp/LJwObBwz1SqhLgfC6gXyP5Zq8dGDFFQw==",
+      "type": "package",
+      "path": "syncfusion.pdfexport.net.core/19.2.0.51",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net5.0/Syncfusion.PdfExport.Net.dll",
+        "lib/net5.0/Syncfusion.PdfExport.Net.xml",
+        "lib/netstandard2.0/Syncfusion.PdfExport.Net.dll",
+        "lib/netstandard2.0/Syncfusion.PdfExport.Net.xml",
+        "syncfusion.pdfexport.net.core.19.2.0.51.nupkg.sha512",
+        "syncfusion.pdfexport.net.core.nuspec"
+      ]
+    },
+    "Syncfusion.PdfViewer.AspNet.Core.Windows/19.2.0.51": {
+      "sha512": "cl8COOC6D5jeKnJsBPl6/MWuMwRbbF00lKWQTaTbApxupnyGjaqAiSudvTh7zxRP3qfc4wEOAZsBmQPYP570Iw==",
+      "type": "package",
+      "path": "syncfusion.pdfviewer.aspnet.core.windows/19.2.0.51",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Pdfium(x64)/pdfium.dll",
+        "lib/netstandard2.0/Pdfium(x86)/pdfium.dll",
+        "lib/netstandard2.0/Syncfusion.PdfViewer.AspNet.Core.dll",
+        "lib/netstandard2.0/Syncfusion.PdfViewer.AspNet.Core.xml",
+        "syncfusion.pdfviewer.aspnet.core.windows.19.2.0.51.nupkg.sha512",
+        "syncfusion.pdfviewer.aspnet.core.windows.nuspec"
+      ]
+    },
+    "Syncfusion.Presentation.Net.Core/19.2.0.51": {
+      "sha512": "Ol9ET4Er6KSnm771nfa20MR+Q2NLJv+DCp2uBltehIwgGlb7eEkh0gR0xlGsLZ1sp8fe7UXq8pF9C8vMWvf6zg==",
+      "type": "package",
+      "path": "syncfusion.presentation.net.core/19.2.0.51",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard1.2/Syncfusion.Presentation.Portable.dll",
+        "lib/netstandard1.2/Syncfusion.Presentation.Portable.xml",
+        "lib/netstandard1.4/Syncfusion.Presentation.Portable.dll",
+        "lib/netstandard1.4/Syncfusion.Presentation.Portable.xml",
+        "lib/netstandard2.0/Syncfusion.Presentation.Portable.dll",
+        "lib/netstandard2.0/Syncfusion.Presentation.Portable.xml",
+        "syncfusion.presentation.net.core.19.2.0.51.nupkg.sha512",
+        "syncfusion.presentation.net.core.nuspec"
+      ]
+    },
+    "Syncfusion.PresentationRenderer.Net.Core/19.2.0.51": {
+      "sha512": "Sbrh85nc6saL1gVYOi1drmMklJUhosuYv2HI5DezWCoVUIKUj6+fjnbsx4025FFFQgZBhs/PFH48BueoBkmTVQ==",
+      "type": "package",
+      "path": "syncfusion.presentationrenderer.net.core/19.2.0.51",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard1.4/Syncfusion.PresentationRenderer.Portable.dll",
+        "lib/netstandard1.4/Syncfusion.PresentationRenderer.Portable.xml",
+        "lib/netstandard2.0/Syncfusion.PresentationRenderer.Portable.dll",
+        "lib/netstandard2.0/Syncfusion.PresentationRenderer.Portable.xml",
+        "syncfusion.presentationrenderer.net.core.19.2.0.51.nupkg.sha512",
+        "syncfusion.presentationrenderer.net.core.nuspec"
+      ]
+    },
+    "Syncfusion.SkiaSharpHelper.Net.Core/19.2.0.51": {
+      "sha512": "AIfLihN6FKAokBXX4pXJszyTex6Uqthu67KYYfU642pFkFJUZ7tweRZ5diAHdJhvNcccpGUYi+B5JLSuU4lHwA==",
+      "type": "package",
+      "path": "syncfusion.skiasharphelper.net.core/19.2.0.51",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard1.4/Syncfusion.SkiaSharpHelper.Portable.XML",
+        "lib/netstandard1.4/Syncfusion.SkiaSharpHelper.Portable.dll",
+        "lib/netstandard2.0/Syncfusion.SkiaSharpHelper.Portable.dll",
+        "lib/netstandard2.0/Syncfusion.SkiaSharpHelper.Portable.xml",
+        "syncfusion.skiasharphelper.net.core.19.2.0.51.nupkg.sha512",
+        "syncfusion.skiasharphelper.net.core.nuspec"
+      ]
+    },
+    "Syncfusion.WordProcessor.AspNet.Core/19.2.0.51": {
+      "sha512": "5p+Mix2d3/pK/ik2vznDtQClxwW9Wq2Em1XnGLeuoDfa12s2WNHOPxqwEWrIYNVPCFmND7NiPoJnRfswLwIP+g==",
+      "type": "package",
+      "path": "syncfusion.wordprocessor.aspnet.core/19.2.0.51",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Syncfusion.WordProcessor.AspNet.Core.dll",
+        "syncfusion.wordprocessor.aspnet.core.19.2.0.51.nupkg.sha512",
+        "syncfusion.wordprocessor.aspnet.core.nuspec"
+      ]
+    },
+    "Syncfusion.XlsIO.Net.Core/19.2.0.51": {
+      "sha512": "M/ZtXbVvHkBoLam46PqQqYucE3ysgeoZ2X4ZbXL1e0fyWl7/h7kTjgE6lioiG5cpv0YAsSuNc3kXTi9AV5kFFA==",
+      "type": "package",
+      "path": "syncfusion.xlsio.net.core/19.2.0.51",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard1.2/Syncfusion.XlsIO.Portable.dll",
+        "lib/netstandard1.2/Syncfusion.XlsIO.Portable.xml",
+        "lib/netstandard1.4/Syncfusion.XlsIO.Portable.dll",
+        "lib/netstandard1.4/Syncfusion.XlsIO.Portable.xml",
+        "lib/netstandard2.0/Syncfusion.XlsIO.Portable.dll",
+        "lib/netstandard2.0/Syncfusion.XlsIO.Portable.xml",
+        "syncfusion.xlsio.net.core.19.2.0.51.nupkg.sha512",
+        "syncfusion.xlsio.net.core.nuspec"
+      ]
+    },
+    "Syncfusion.XlsIORenderer.Net.Core/19.2.0.51": {
+      "sha512": "nNFZ03COw/UnyIAT/iaSKzzx/wBeOMX/LLeA3gbwp+1MJudngrB38NJ4MnpgqzAhwPVW8MuHfZRMpp9fboJPOA==",
+      "type": "package",
+      "path": "syncfusion.xlsiorenderer.net.core/19.2.0.51",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard1.4/Syncfusion.XlsIORenderer.Portable.dll",
+        "lib/netstandard1.4/Syncfusion.XlsIORenderer.Portable.xml",
+        "lib/netstandard2.0/Syncfusion.XlsIORenderer.Portable.dll",
+        "lib/netstandard2.0/Syncfusion.XlsIORenderer.Portable.xml",
+        "syncfusion.xlsiorenderer.net.core.19.2.0.51.nupkg.sha512",
+        "syncfusion.xlsiorenderer.net.core.nuspec"
+      ]
+    },
+    "System.Drawing.Common/4.5.1": {
+      "sha512": "GiyeGi/v4xYDz1vCNFwFvhz9k1XddOG7VD3jxRqzRBCbTHji+s3HxxbxtoymuK4OadEpgotI8zQ5+GEEH9sUEQ==",
+      "type": "package",
+      "path": "system.drawing.common/4.5.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net461/System.Drawing.Common.dll",
+        "lib/netstandard2.0/System.Drawing.Common.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net461/System.Drawing.Common.dll",
+        "ref/netstandard2.0/System.Drawing.Common.dll",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "runtimes/unix/lib/netcoreapp2.0/System.Drawing.Common.dll",
+        "runtimes/win/lib/netcoreapp2.0/System.Drawing.Common.dll",
+        "system.drawing.common.4.5.1.nupkg.sha512",
+        "system.drawing.common.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.IO.Pipelines/5.0.1": {
+      "sha512": "qEePWsaq9LoEEIqhbGe6D5J8c9IqQOUuTzzV6wn1POlfdLkJliZY3OlB0j0f17uMWlqZYjH7txj+2YbyrIA8Yg==",
+      "type": "package",
+      "path": "system.io.pipelines/5.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.IO.Pipelines.dll",
+        "lib/net461/System.IO.Pipelines.xml",
+        "lib/netcoreapp3.0/System.IO.Pipelines.dll",
+        "lib/netcoreapp3.0/System.IO.Pipelines.xml",
+        "lib/netstandard1.3/System.IO.Pipelines.dll",
+        "lib/netstandard1.3/System.IO.Pipelines.xml",
+        "lib/netstandard2.0/System.IO.Pipelines.dll",
+        "lib/netstandard2.0/System.IO.Pipelines.xml",
+        "ref/netcoreapp2.0/System.IO.Pipelines.dll",
+        "ref/netcoreapp2.0/System.IO.Pipelines.xml",
+        "system.io.pipelines.5.0.1.nupkg.sha512",
+        "system.io.pipelines.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Memory/4.5.3": {
+      "sha512": "3oDzvc/zzetpTKWMShs1AADwZjQ/36HnsufHRPcOjyRAAMLDlu2iD33MBI2opxnezcVUtXyqDXXjoFMOU9c7SA==",
+      "type": "package",
+      "path": "system.memory/4.5.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netcoreapp2.1/_._",
+        "lib/netstandard1.1/System.Memory.dll",
+        "lib/netstandard1.1/System.Memory.xml",
+        "lib/netstandard2.0/System.Memory.dll",
+        "lib/netstandard2.0/System.Memory.xml",
+        "ref/netcoreapp2.1/_._",
+        "system.memory.4.5.3.nupkg.sha512",
+        "system.memory.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Net.Http.Json/5.0.0": {
+      "sha512": "3CPSQpCzEmI9o+1G79TnPCjF40omCdnoXj2Rg76BDwGj5+LZnFPjV+t35eedlvl+uthmholk/XXxXTYgJWSexw==",
+      "type": "package",
+      "path": "system.net.http.json/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Net.Http.Json.dll",
+        "lib/net461/System.Net.Http.Json.xml",
+        "lib/net5.0/System.Net.Http.Json.dll",
+        "lib/net5.0/System.Net.Http.Json.xml",
+        "lib/netstandard2.0/System.Net.Http.Json.dll",
+        "lib/netstandard2.0/System.Net.Http.Json.xml",
+        "system.net.http.json.5.0.0.nupkg.sha512",
+        "system.net.http.json.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Text.Encoding.CodePages/4.4.0": {
+      "sha512": "6JX7ZdaceBiLKLkYt8zJcp4xTJd1uYyXXEkPw6mnlUIjh1gZPIVKPtRXPmY5kLf6DwZmf5YLwR3QUrRonl7l0A==",
+      "type": "package",
+      "path": "system.text.encoding.codepages/4.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net46/System.Text.Encoding.CodePages.dll",
+        "lib/net461/System.Text.Encoding.CodePages.dll",
+        "lib/netstandard1.3/System.Text.Encoding.CodePages.dll",
+        "lib/netstandard2.0/System.Text.Encoding.CodePages.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/netstandard1.3/System.Text.Encoding.CodePages.dll",
+        "ref/netstandard1.3/System.Text.Encoding.CodePages.xml",
+        "ref/netstandard1.3/de/System.Text.Encoding.CodePages.xml",
+        "ref/netstandard1.3/es/System.Text.Encoding.CodePages.xml",
+        "ref/netstandard1.3/fr/System.Text.Encoding.CodePages.xml",
+        "ref/netstandard1.3/it/System.Text.Encoding.CodePages.xml",
+        "ref/netstandard1.3/ja/System.Text.Encoding.CodePages.xml",
+        "ref/netstandard1.3/ko/System.Text.Encoding.CodePages.xml",
+        "ref/netstandard1.3/ru/System.Text.Encoding.CodePages.xml",
+        "ref/netstandard1.3/zh-hans/System.Text.Encoding.CodePages.xml",
+        "ref/netstandard1.3/zh-hant/System.Text.Encoding.CodePages.xml",
+        "ref/netstandard2.0/System.Text.Encoding.CodePages.dll",
+        "ref/netstandard2.0/System.Text.Encoding.CodePages.xml",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "runtimes/win/lib/net461/System.Text.Encoding.CodePages.dll",
+        "runtimes/win/lib/netcoreapp2.0/System.Text.Encoding.CodePages.dll",
+        "runtimes/win/lib/netstandard1.3/System.Text.Encoding.CodePages.dll",
+        "runtimes/win/lib/netstandard2.0/System.Text.Encoding.CodePages.dll",
+        "system.text.encoding.codepages.4.4.0.nupkg.sha512",
+        "system.text.encoding.codepages.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "BlazorDemos.Client/1.0.0": {
+      "type": "project",
+      "path": "../Client/BlazorDemos.Client.csproj",
+      "msbuildProject": "../Client/BlazorDemos.Client.csproj"
+    },
+    "BlazorDemos.Shared/1.0.0": {
+      "type": "project",
+      "path": "../Shared/BlazorDemos.Shared.csproj",
+      "msbuildProject": "../Shared/BlazorDemos.Shared.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net5.0": [
+      "BlazorDemos.Client >= 1.0.0",
+      "BlazorDemos.Shared >= 1.0.0",
+      "Microsoft.AspNetCore.Components.WebAssembly.Server >= 5.0.5",
+      "Microsoft.AspNetCore.Mvc.NewtonsoftJson >= 5.0.5",
+      "Syncfusion.PdfViewer.AspNet.Core.Windows >= 19.2.0.*"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Syncfusion\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\Development\\Vol 3, 2021 Release\\Blazor\\Samples\\ej2-blazor-samples\\WebAssembly-Demos\\Server\\BlazorDemos.Server.csproj",
+      "projectName": "BlazorDemos.Server",
+      "projectPath": "D:\\Development\\Vol 3, 2021 Release\\Blazor\\Samples\\ej2-blazor-samples\\WebAssembly-Demos\\Server\\BlazorDemos.Server.csproj",
+      "packagesPath": "C:\\Users\\Syncfusion\\.nuget\\packages\\",
+      "outputPath": "D:\\Development\\Vol 3, 2021 Release\\Blazor\\Samples\\ej2-blazor-samples\\WebAssembly-Demos\\Server\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Syncfusion\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "projectReferences": {
+            "D:\\Development\\Vol 3, 2021 Release\\Blazor\\Samples\\ej2-blazor-samples\\WebAssembly-Demos\\Client\\BlazorDemos.Client.csproj": {
+              "projectPath": "D:\\Development\\Vol 3, 2021 Release\\Blazor\\Samples\\ej2-blazor-samples\\WebAssembly-Demos\\Client\\BlazorDemos.Client.csproj"
+            },
+            "D:\\Development\\Vol 3, 2021 Release\\Blazor\\Samples\\ej2-blazor-samples\\WebAssembly-Demos\\Shared\\BlazorDemos.Shared.csproj": {
+              "projectPath": "D:\\Development\\Vol 3, 2021 Release\\Blazor\\Samples\\ej2-blazor-samples\\WebAssembly-Demos\\Shared\\BlazorDemos.Shared.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0": {
+        "targetAlias": "net5.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.WebAssembly.Server": {
+            "target": "Package",
+            "version": "[5.0.5, )"
+          },
+          "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+            "target": "Package",
+            "version": "[5.0.5, )"
+          },
+          "Syncfusion.PdfViewer.AspNet.Core.Windows": {
+            "target": "Package",
+            "version": "[19.2.0.*, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

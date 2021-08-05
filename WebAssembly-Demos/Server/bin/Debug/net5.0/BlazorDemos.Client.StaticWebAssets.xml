@@ -1,0 +1,45 @@
+﻿<StaticWebAssets Version="1.0">
+  <ContentRoot BasePath="_content/Syncfusion.Blazor.BarcodeGenerator" Path="C:\Users\Syncfusion\.nuget\packages\syncfusion.blazor.barcodegenerator\19.2.0.1726\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Syncfusion.Blazor.BulletChart" Path="C:\Users\Syncfusion\.nuget\packages\syncfusion.blazor.bulletchart\19.2.0.1726\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Syncfusion.Blazor.Buttons" Path="C:\Users\Syncfusion\.nuget\packages\syncfusion.blazor.buttons\19.2.0.1726\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Syncfusion.Blazor.Calendars" Path="C:\Users\Syncfusion\.nuget\packages\syncfusion.blazor.calendars\19.2.0.1726\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Syncfusion.Blazor.Charts" Path="C:\Users\Syncfusion\.nuget\packages\syncfusion.blazor.charts\19.2.0.1726\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Syncfusion.Blazor.CircularGauge" Path="C:\Users\Syncfusion\.nuget\packages\syncfusion.blazor.circulargauge\19.2.0.1726\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Syncfusion.Blazor.Core" Path="C:\Users\Syncfusion\.nuget\packages\syncfusion.blazor.core\19.2.0.1726\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Syncfusion.Blazor.Data" Path="C:\Users\Syncfusion\.nuget\packages\syncfusion.blazor.data\19.2.0.1726\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Syncfusion.Blazor.Diagram" Path="C:\Users\Syncfusion\.nuget\packages\syncfusion.blazor.diagram\19.2.0.1726\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Syncfusion.Blazor.Diagrams" Path="C:\Users\Syncfusion\.nuget\packages\syncfusion.blazor.diagrams\19.2.0.1726\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Syncfusion.Blazor.DropDowns" Path="C:\Users\Syncfusion\.nuget\packages\syncfusion.blazor.dropdowns\19.2.0.1726\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Syncfusion.Blazor.FileManager" Path="C:\Users\Syncfusion\.nuget\packages\syncfusion.blazor.filemanager\19.2.0.1726\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Syncfusion.Blazor.Gantt" Path="C:\Users\Syncfusion\.nuget\packages\syncfusion.blazor.gantt\19.2.0.1726\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Syncfusion.Blazor.Grid" Path="C:\Users\Syncfusion\.nuget\packages\syncfusion.blazor.grid\19.2.0.1726\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Syncfusion.Blazor.HeatMap" Path="C:\Users\Syncfusion\.nuget\packages\syncfusion.blazor.heatmap\19.2.0.1726\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Syncfusion.Blazor.InPlaceEditor" Path="C:\Users\Syncfusion\.nuget\packages\syncfusion.blazor.inplaceeditor\19.2.0.1726\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Syncfusion.Blazor.Inputs" Path="C:\Users\Syncfusion\.nuget\packages\syncfusion.blazor.inputs\19.2.0.1726\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Syncfusion.Blazor.Kanban" Path="C:\Users\Syncfusion\.nuget\packages\syncfusion.blazor.kanban\19.2.0.1726\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Syncfusion.Blazor.Layouts" Path="C:\Users\Syncfusion\.nuget\packages\syncfusion.blazor.layouts\19.2.0.1726\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Syncfusion.Blazor.LinearGauge" Path="C:\Users\Syncfusion\.nuget\packages\syncfusion.blazor.lineargauge\19.2.0.1726\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Syncfusion.Blazor.Lists" Path="C:\Users\Syncfusion\.nuget\packages\syncfusion.blazor.lists\19.2.0.1726\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Syncfusion.Blazor.Maps" Path="C:\Users\Syncfusion\.nuget\packages\syncfusion.blazor.maps\19.2.0.1726\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Syncfusion.Blazor.Navigations" Path="C:\Users\Syncfusion\.nuget\packages\syncfusion.blazor.navigations\19.2.0.1726\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Syncfusion.Blazor.Notifications" Path="C:\Users\Syncfusion\.nuget\packages\syncfusion.blazor.notifications\19.2.0.1726\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Syncfusion.Blazor.PdfViewer" Path="C:\Users\Syncfusion\.nuget\packages\syncfusion.blazor.pdfviewer\19.2.0.1726\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Syncfusion.Blazor.PivotTable" Path="C:\Users\Syncfusion\.nuget\packages\syncfusion.blazor.pivottable\19.2.0.1726\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Syncfusion.Blazor.Popups" Path="C:\Users\Syncfusion\.nuget\packages\syncfusion.blazor.popups\19.2.0.1726\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Syncfusion.Blazor.ProgressBar" Path="C:\Users\Syncfusion\.nuget\packages\syncfusion.blazor.progressbar\19.2.0.1726\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Syncfusion.Blazor.QueryBuilder" Path="C:\Users\Syncfusion\.nuget\packages\syncfusion.blazor.querybuilder\19.2.0.1726\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Syncfusion.Blazor.RangeNavigator" Path="C:\Users\Syncfusion\.nuget\packages\syncfusion.blazor.rangenavigator\19.2.0.1726\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Syncfusion.Blazor.RichTextEditor" Path="C:\Users\Syncfusion\.nuget\packages\syncfusion.blazor.richtexteditor\19.2.0.1726\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Syncfusion.Blazor.Schedule" Path="C:\Users\Syncfusion\.nuget\packages\syncfusion.blazor.schedule\19.2.0.1726\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Syncfusion.Blazor.SmithChart" Path="C:\Users\Syncfusion\.nuget\packages\syncfusion.blazor.smithchart\19.2.0.1726\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Syncfusion.Blazor.Sparkline" Path="C:\Users\Syncfusion\.nuget\packages\syncfusion.blazor.sparkline\19.2.0.1726\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Syncfusion.Blazor.Spinner" Path="C:\Users\Syncfusion\.nuget\packages\syncfusion.blazor.spinner\19.2.0.1726\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Syncfusion.Blazor.SplitButtons" Path="C:\Users\Syncfusion\.nuget\packages\syncfusion.blazor.splitbuttons\19.2.0.1726\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Syncfusion.Blazor.StockChart" Path="C:\Users\Syncfusion\.nuget\packages\syncfusion.blazor.stockchart\19.2.0.1726\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Syncfusion.Blazor.Themes" Path="C:\Users\Syncfusion\.nuget\packages\syncfusion.blazor.themes\19.2.0.1726\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Syncfusion.Blazor.TreeGrid" Path="C:\Users\Syncfusion\.nuget\packages\syncfusion.blazor.treegrid\19.2.0.1726\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Syncfusion.Blazor.TreeMap" Path="C:\Users\Syncfusion\.nuget\packages\syncfusion.blazor.treemap\19.2.0.1726\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Syncfusion.Blazor.WordProcessor" Path="C:\Users\Syncfusion\.nuget\packages\syncfusion.blazor.wordprocessor\19.2.0.1726\build\..\staticwebassets\" />
+  <ContentRoot BasePath="/" Path="D:\Development\Vol 3, 2021 Release\Blazor\Samples\ej2-blazor-samples\WebAssembly-Demos\Client\bin\Debug\net5.0\wwwroot\" />
+  <ContentRoot BasePath="/" Path="D:\Development\Vol 3, 2021 Release\Blazor\Samples\ej2-blazor-samples\WebAssembly-Demos\Client\obj\Debug\net5.0\scopedcss\bundle\" />
+</StaticWebAssets>

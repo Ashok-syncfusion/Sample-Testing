@@ -1,0 +1,46 @@
+@namespace BlazorDemos.Client.Shared
+@implements IDisposable;
+
+@using System.Globalization;
+@inject IJSRuntime JSRuntime;
+@inject SampleService SampleService;
+@inject NavigationManager NavigationManager;
+
+<DropDownComponent DataSource="@cultureData" Value="@culture" OnSelect="@OnSelected"></DropDownComponent>
+
+@code {
+    private string culture { get; set; }
+
+    private List<DropDownData> cultureData = new List<DropDownData> {
+        new DropDownData() { ID = "en-US", Text = "English" },
+        new DropDownData() { ID = "de", Text = "German - Germany*" },
+        new DropDownData() { ID = "fr-CH", Text = "French - Switzerland*" },
+        new DropDownData() { ID = "zh", Text = "Chinese - China*" },
+    };
+
+    // Culture selection event callback handler
+    private void OnSelected(DropDownData args)
+    {
+        if (CultureInfo.CurrentCulture.Name != args.ID)
+        {
+            var js = (IJSInProcessRuntime)JSRuntime;
+            js.InvokeVoid("cultureInfo.set", args.ID);
+            NavigationManager.NavigateTo(NavigationManager.Uri, forceLoad: true);;
+        }
+    }
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        var currentCulture = cultureData.Where(item => item.ID == System.Globalization.CultureInfo.CurrentCulture.Name).ToList();
+        if (currentCulture.Any())
+        {
+            culture = currentCulture.First().Text;
+        }
+    }
+
+    public void Dispose()
+    {
+        cultureData = null;
+    }
+}

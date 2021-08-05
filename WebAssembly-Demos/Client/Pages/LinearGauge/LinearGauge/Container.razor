@@ -1,0 +1,125 @@
+﻿@page "/linear-gauge/container"
+
+@using Syncfusion.Blazor.LinearGauge
+@using Syncfusion.Blazor.DropDowns
+@using Newtonsoft.Json;
+
+@inherits SampleBaseComponent;
+
+<SampleDescription>
+    <p>This sample demonstrates the type of containers used in linear gauge. Orientation and container type of the linear gauge component can be changed by using orientation and container type options in the property panel.</p>
+</SampleDescription>
+<ActionDescription>
+   <p>This sample demonstrates the orientation and container customization in linear gauge. The gauge can be rendered either in
+      vertical or horizontal orientation. You can use <code><a target='_blank' class='code' href='https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.LinearGauge.LinearGaugeContainer.html#Syncfusion_Blazor_LinearGauge_LinearGaugeContainer_Type'>
+      Type</a></code> property in <code><a target='_blank' class='code' href='https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.LinearGauge.LinearGaugeContainer.html'>
+      LinearGaugeContainer</a></code> property to change the type of the container.</p>
+   <p>More information about container can be found in this <a target='_blank' href='https://blazor.syncfusion.com/documentation/linear-gauge/linear-gauge-appearance/#linear-gauge-container'>documentation section</a>.</p>
+</ActionDescription>
+
+<div class="col-lg-9 control-section sb-property-border">
+    <SfLinearGauge Title="Temparature Measure" Orientation="@GaugeOrientation">
+        <LinearGaugeContainer Width="13" RoundedCornerRadius="5" Type="@GaugeContainerType">
+            <LinearGaugeAxes>
+                <LinearGaugeAxis Minimum="0" Maximum="180">
+                    <LinearGaugeLine Width="0"/>
+                    <LinearGaugeMajorTicks Color="#9e9e9e" Interval="20" Height="20"/>
+                    <LinearGaugeMinorTicks Color="#9e9e9e" Interval="10" Height="10"/>
+                    <LinearGaugePointers>
+                        <LinearGaugePointer Value="90" Height="13" Width="13" Type="Point.Bar" Color="#f02828"/>
+                    </LinearGaugePointers>
+                </LinearGaugeAxis>
+                <LinearGaugeAxis Minimum="0" Maximum="180" OpposedPosition="true">
+                    <LinearGaugeLine Width="0" />
+                    <LinearGaugeMajorTicks Interval="20" Height="20" />
+                    <LinearGaugeMinorTicks Color="#9e9e9e" Interval="10" Height="10" />
+                    <LinearGaugePointers>
+                        <LinearGaugePointer Width="0" />
+                    </LinearGaugePointers>
+                </LinearGaugeAxis>
+            </LinearGaugeAxes>
+        </LinearGaugeContainer>
+    </SfLinearGauge>
+</div>
+<div class="col-md-3 property-section">
+    <div class="property-panel-section">
+        <div class="property-panel-header">Properties</div>
+        <div class="property-panel-content">
+            <table style="width: 100%" >
+                <tbody>
+                    <tr>
+                        <td>
+                            <div>Orientation</div>
+                        </td>
+                        <td>
+                            <div>
+                                <SfDropDownList TValue="string" TItem="OrientationData" DataSource="@GaugeOrientData" @bind-Value="@OrientationValue">
+                                    <DropDownListEvents TValue="string" TItem="OrientationData" ValueChange="OrintationChange"/>
+                                    <DropDownListFieldSettings text="Name" value="Name"/>
+                                </SfDropDownList>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>Container Type</div>
+                        </td>
+                        <td>
+                            <div>
+                                <SfDropDownList TValue="string" TItem="ContainerTypeData" DataSource="@ContainerTypeDatas" @bind-Value="@ContainerTypeValue">
+                                    <DropDownListEvents TValue="string" TItem="ContainerTypeData" ValueChange="ContainerTypeChange"/>
+                                    <DropDownListFieldSettings text="Name" value="Name"/>
+                                </SfDropDownList>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<style>
+    tr {
+       height: 40px;
+    }
+    td {
+        width:50%
+    }
+</style> 
+@code {
+    private Orientation GaugeOrientation = Orientation.Vertical;
+    private ContainerType GaugeContainerType = ContainerType.Thermometer;
+    private string OrientationValue = "Vertical";
+    private string ContainerTypeValue = "Thermometer";
+    public class OrientationData {
+        public string Name { get; set; }
+    }
+    private List<OrientationData> GaugeOrientData = new List<OrientationData> {
+        new OrientationData{ Name = "Vertical"},
+        new OrientationData{ Name = "Horizontal"},
+    };
+    public class ContainerTypeData {
+        public string Name { get; set; }
+    }
+    private List<ContainerTypeData> ContainerTypeDatas = new List<ContainerTypeData> {
+        new ContainerTypeData{ Name = "Thermometer"},
+        new ContainerTypeData{ Name = "Normal"},
+        new ContainerTypeData{ Name = "RoundedRectangle"},
+    };
+    private void OrintationChange(ChangeEventArgs<string, OrientationData> args) {
+        this.OrientationValue = (args.Value).ToString();
+        this.GaugeOrientation = this.OrientationValue == "Vertical" ? Orientation.Vertical : Orientation.Horizontal;
+    }
+    private void ContainerTypeChange(ChangeEventArgs<string, ContainerTypeData> args) {
+        this.ContainerTypeValue = (args.Value).ToString();
+        if (this.ContainerTypeValue == "Thermometer") {
+            this.GaugeContainerType = ContainerType.Thermometer;
+        }
+        else if (this.ContainerTypeValue == "Normal") {
+            this.GaugeContainerType = ContainerType.Normal;
+        }
+        else {
+            this.GaugeContainerType = ContainerType.RoundedRectangle;
+        }
+    }
+}
